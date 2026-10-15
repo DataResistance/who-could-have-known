@@ -1,0 +1,2939 @@
+{
+  "_meta": {
+    "schema": "see notes/who-could-have-known.md",
+    "drafted": "2026-10-15",
+    "provenance_policy": "Factual and judgment fields are Claude drafts until an author sets status to 'approved'. 'commentary' is author-only and is never drafted by Claude.",
+    "headline_policy": "Each headline was checked against a Wayback Machine snapshot of the original page (the visible h1 where available; otherwise og:title or <title>). 'url' is the original; 'archive_url' is the snapshot to link to. Notes record any differences.",
+    "outcome_values": [
+      "nothing",
+      "pr-tweak",
+      "product-pulled",
+      "fine-settlement-order",
+      "ruling-law"
+    ]
+  },
+  "cases": [
+    {
+      "id": "please-rob-me-2010",
+      "playable": true,
+      "title": "Please Rob Me lists people who have left home",
+      "date": "2010-02-17",
+      "spatial": true,
+      "data_type": "check-ins",
+      "companies": [
+        "Foursquare",
+        "Twitter"
+      ],
+      "redact": [
+        "Please Rob Me",
+        "PleaseRobMe",
+        "Foursquare",
+        "Twitter"
+      ],
+      "redaction_label": "a website",
+      "headlines": [
+        {
+          "text": "Please Rob Me Makes Foursquare Super Useful For Burglars",
+          "outlet": "TechCrunch",
+          "date": "2010-02-17",
+          "url": "http://techcrunch.com/2010/02/17/please-rob-me-makes-foursquare-super-useful-for-burglars/",
+          "archive_url": "https://web.archive.org/web/20100219072456/http://techcrunch.com/2010/02/17/please-rob-me-makes-foursquare-super-useful-for-burglars/",
+          "checked": true,
+          "checked_via": "Wayback snapshot <title>",
+          "phase": "break"
+        },
+        {
+          "text": "Please Rob Me and the problem with social media",
+          "outlet": "Christian Science Monitor",
+          "date": "2010-02-17",
+          "url": "http://www.csmonitor.com/Technology/Horizons/2010/0217/Please-Rob-Me-and-the-problem-with-social-media",
+          "archive_url": "https://web.archive.org/web/20151010092939/http://www.csmonitor.com/Technology/Horizons/2010/0217/Please-Rob-Me-and-the-problem-with-social-media",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Foursquare Responds To Please Rob Me: Please Shut Up",
+          "outlet": "TechCrunch",
+          "date": "2010-02-18",
+          "url": "http://techcrunch.com/2010/02/18/foursquare-please-rob-me/",
+          "archive_url": "https://web.archive.org/web/20100220195648/http://techcrunch.com/2010/02/18/foursquare-please-rob-me/",
+          "checked": true,
+          "checked_via": "Wayback snapshot <title>",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "A Dutch website scraped public Foursquare check-ins that users had auto-posted to Twitter and displayed them as a scrolling list of people who were not at home, filterable by city. Its creators said the aim was to warn people against broadcasting their whereabouts. The site also messaged each listed user on Twitter.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Foursquare published a privacy post the next day. Check-in services continued to operate as before.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "girls-around-me-2012"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Foursquare",
+          "summary": "Published a blog post on privacy the following day.",
+          "url": "https://techcrunch.com/2010/02/18/foursquare-please-rob-me",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20100220195648/http://techcrunch.com/2010/02/18/foursquare-please-rob-me/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "TechCrunch, 17 Feb 2010",
+          "url": "https://techcrunch.com/2010/02/17/please-rob-me-makes-foursquare-super-useful-for-burglars/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20100219072456/http://techcrunch.com/2010/02/17/please-rob-me-makes-foursquare-super-useful-for-burglars/"
+        },
+        {
+          "label": "The Next Web, 17 Feb 2010",
+          "url": "https://thenextweb.com/news/please-rob-me",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20210513095256/https://thenextweb.com/news/please-rob-me"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "43",
+          "note": "Data Power ch. 1"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "street-view-wifi-2010",
+      "playable": true,
+      "title": "Street View cars collected Wi-Fi payload data",
+      "date": "2010-05-14",
+      "spatial": true,
+      "data_type": "wifi-payload",
+      "companies": [
+        "Google"
+      ],
+      "redact": [
+        "Google",
+        "Street View"
+      ],
+      "redaction_label": "a search company",
+      "headlines": [
+        {
+          "text": "Google admits collecting Wi-Fi data through Street View cars",
+          "outlet": "The Guardian",
+          "date": "2010-05-15",
+          "url": "http://www.theguardian.com/technology/2010/may/15/google-admits-storing-private-data",
+          "archive_url": "https://web.archive.org/web/20130914222834/http://www.theguardian.com/technology/2010/may/15/google-admits-storing-private-data",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Google Admits Its Street View Cars Collected Personal Wi-Fi Data",
+          "outlet": "ABA Journal",
+          "date": "2010-05",
+          "url": "http://www.abajournal.com/news/article/google_admits_its_street_view_cars_collected_personal_wifi_data",
+          "archive_url": "https://web.archive.org/web/20100520041055/http://www.abajournal.com/news/article/google_admits_its_street_view_cars_collected_personal_wifi_data",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Google Admits Accidentally Intercepting Users' Private Data With Street View Cars",
+          "outlet": "TechCrunch",
+          "date": "2010-10-25",
+          "url": "http://techcrunch.com/2010/10/25/google-admits-accidentally-intercepting-users-private-data-with-street-view-cars/",
+          "archive_url": "https://web.archive.org/web/20160323004957/http://techcrunch.com/2010/10/25/google-admits-accidentally-intercepting-users-private-data-with-street-view-cars/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "note": "Later admission (Oct 2010) that full emails and passwords were captured.",
+          "phase": "aftermath"
+        }
+      ],
+      "what_happened": {
+        "text": "After an audit requested by Germany's data protection authority, Google said its Street View cars had been recording fragments of 'payload' data (content such as emails and web pages) from unencrypted home Wi-Fi networks, in addition to network names and hardware addresses. Two weeks earlier, a Google blog post had said the company did not collect payload data. Google attributed the collection to experimental code written in 2006.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "The FCC fined Google $25,000 in 2012, for impeding its investigation rather than for the collection itself. In March 2013 Google paid $7 million to 38 states and DC and agreed to destroy the payload data.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Google",
+          "summary": "Said it had been 'mistakenly collecting samples of payload data' from open Wi-Fi networks and grounded its Street View cars.",
+          "url": "http://googleblog.blogspot.com/2010/05/wifi-data-collection-update.html",
+          "archive_url": "https://web.archive.org/web/20100516202022/http://googleblog.blogspot.com/2010/05/wifi-data-collection-update.html",
+          "by": "claude",
+          "status": "draft"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Register on the $7M settlement, 13 Mar 2013",
+          "url": "https://www.theregister.com/2013/03/13/google_wifi_multi_million_dollar_settlement/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20201112013704/https://www.theregister.com/2013/03/13/google_wifi_multi_million_dollar_settlement/"
+        },
+        {
+          "label": "EPIC, Joffe v. Google",
+          "url": "https://archive.epic.org/amicus/google-street-view",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20211127082505/https://archive.epic.org/amicus/google-street-view/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "iphone-consolidated-db-2011",
+      "playable": true,
+      "title": "iPhones kept a hidden log of locations",
+      "date": "2011-04-20",
+      "spatial": true,
+      "data_type": "device-cache",
+      "companies": [
+        "Apple"
+      ],
+      "redact": [
+        "Apple",
+        "iPhone",
+        "iPhones",
+        "iPad"
+      ],
+      "redaction_label": "a phone maker",
+      "headlines": [
+        {
+          "text": "iPhone keeps record of everywhere you go",
+          "outlet": "The Guardian",
+          "date": "2011-04-20",
+          "url": "http://www.theguardian.com/technology/2011/apr/20/iphone-tracking-prompts-privacy-fears",
+          "archive_url": "https://web.archive.org/web/20130928150823/http://www.theguardian.com/technology/2011/apr/20/iphone-tracking-prompts-privacy-fears",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Your iPhone Keeps a Secret Log of Everywhere You Go, Security Experts Find",
+          "outlet": "Popular Science",
+          "date": "2011-04",
+          "url": "http://www.popsci.com/technology/article/2011-04/your-iphone-automatically-tracks-where-you-go-and-when-security-experts-say",
+          "archive_url": "https://web.archive.org/web/20110424115458/http://www.popsci.com/technology/article/2011-04/your-iphone-automatically-tracks-where-you-go-and-when-security-experts-say",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Researchers: Apple's iPhone Keeps Track Of Every Little Place You Go",
+          "outlet": "NPR",
+          "date": "2011-04-25",
+          "url": "http://www.npr.org/sections/thetwo-way/2011/04/25/135570632/researchers-apples-iphone-keeps-track-of-every-little-place-you-go",
+          "archive_url": "https://web.archive.org/web/20150812035118/http://www.npr.org/sections/thetwo-way/2011/04/25/135570632/researchers-apples-iphone-keeps-track-of-every-little-place-you-go",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Researchers Pete Warden and Alasdair Allan found a file, consolidated.db, on iPhones and 3G iPads running iOS 4 that stored timestamped latitude and longitude records, in some cases going back about a year, and that was copied to users' computers during backups. They found no evidence the data was sent to Apple.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Apple said it was not tracking users and called the retention a bug. iOS 4.3.3, released about a week later, cut the cache to seven days, stopped backing it up, and deleted it when location services were off. A Senate Judiciary subcommittee held a hearing on 10 May 2011.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "google-location-off-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Apple",
+          "summary": "Statement of 27 April 2011: Apple is not tracking iPhone locations; the file is a cache of Wi-Fi hotspot and cell tower locations used to speed up positioning; the long retention was a bug.",
+          "url": "https://www.washingtontimes.com/news/2011/apr/27/apple-products-not-designed-to-track-users/",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20110503022719/http://www.washingtontimes.com/news/2011/apr/27/apple-products-not-designed-to-track-users/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Macworld on Apple's congressional testimony, May 2011",
+          "url": "https://www.macworld.com/article/159804/2011/05/apple_congress_location_testimony.html",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20110512024140/http://www.macworld.com/article/159804/2011/05/apple_congress_location_testimony.html"
+        },
+        {
+          "label": "EPIC on the iOS 4.3.3 changes",
+          "url": "https://archive.epic.org/2011/04/apple-modifies-ios4-reduces-st.html",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20240414202820/https://archive.epic.org/2011/04/apple-modifies-ios4-reduces-st.html"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "girls-around-me-2012",
+      "playable": true,
+      "title": "Girls Around Me maps women's check-ins with their Facebook profiles",
+      "date": "2012-03-30",
+      "spatial": true,
+      "data_type": "check-ins",
+      "companies": [
+        "i-Free Innovations",
+        "Foursquare",
+        "Facebook"
+      ],
+      "redact": [
+        "Girls Around Me",
+        "Foursquare",
+        "FourSquare",
+        "Facebook",
+        "i-Free"
+      ],
+      "redaction_label": "an app",
+      "headlines": [
+        {
+          "text": "This Creepy App Isn’t Just Stalking Women Without Their Knowledge, It’s A Wake-Up Call About Facebook Privacy",
+          "outlet": "Cult of Mac",
+          "date": "2012-03-30",
+          "url": "https://www.cultofmac.com/news/this-creepy-app-isnt-just-stalking-women-without-their-knowledge-its-a-wake-up-call-about-facebook-privacy",
+          "archive_url": "https://web.archive.org/web/20240928104854/https://www.cultofmac.com/news/this-creepy-app-isnt-just-stalking-women-without-their-knowledge-its-a-wake-up-call-about-facebook-privacy",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "note": "Archived (2024) version appends '[Update]'; no 2012 snapshot found.",
+          "phase": "break"
+        },
+        {
+          "text": "Girls Around Me App: Not Today's Creepiest Stalker",
+          "outlet": "Dark Reading",
+          "date": "2012-04",
+          "url": "https://www.darkreading.com/cyber-risk/girls-around-me-app-not-today-s-creepiest-stalker",
+          "archive_url": "https://web.archive.org/web/20240529215919/https://www.darkreading.com/cyber-risk/girls-around-me-app-not-today-s-creepiest-stalker",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Girls Around Me Dev: We Didn’t Do Anything Wrong [Statement]",
+          "outlet": "Cult of Mac",
+          "date": "2012-04",
+          "url": "https://www.cultofmac.com/news/girls-around-me-dev-we-didnt-do-anything-wrong-statement",
+          "archive_url": "https://web.archive.org/web/20251104204105/https://www.cultofmac.com/news/girls-around-me-dev-we-didnt-do-anything-wrong-statement",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "An iPhone app showed women who had checked in on Foursquare at nearby venues and pulled their public Facebook profiles and photos. Cult of Mac's report on 30 March 2012 drew wide coverage. The app had been downloaded more than 70,000 times, according to Dark Reading.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "product-pulled",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Foursquare cut off the app's API access, citing its policy against aggregating information across venues, and the developer withdrew the app from the App Store. Facebook said it was investigating.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "please-rob-me-2010"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "women"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "i-Free Innovations",
+          "summary": "Said the app only let users browse nearby venues, 'as if you passed by and looked in the window', and showed no data users had not already shared.",
+          "url": "https://www.cultofmac.com/news/girls-around-me-dev-we-didnt-do-anything-wrong-statement",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20251104204105/https://www.cultofmac.com/news/girls-around-me-dev-we-didnt-do-anything-wrong-statement"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Cult of Mac on why Foursquare cut the app off",
+          "url": "https://www.cultofmac.com/158215/why-foursquare-really-killed-creepy-stalking-app-girls-around-me/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20241122203307/https://www.cultofmac.com/news/why-foursquare-really-killed-creepy-stalking-app-girls-around-me"
+        },
+        {
+          "label": "Dark Reading, Apr 2012",
+          "url": "https://www.darkreading.com/cyber-risk/girls-around-me-app-not-today-s-creepiest-stalker",
+          "archive_url": "https://web.archive.org/web/20240529215919/https://www.darkreading.com/cyber-risk/girls-around-me-app-not-today-s-creepiest-stalker",
+          "kind": "press"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "41–43",
+          "note": "Data Power ch. 1"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "msft-pedestrian-route-2012",
+      "playable": true,
+      "title": "Microsoft patent routes pedestrians around 'unsafe' neighborhoods",
+      "date": "2012-01-03",
+      "spatial": true,
+      "data_type": "crime-weighted-routing",
+      "companies": [
+        "Microsoft"
+      ],
+      "redact": [
+        "Microsoft"
+      ],
+      "redaction_label": "a software company",
+      "headlines": [
+        {
+          "text": "New Microsoft patent: Walking directions that avoid crime-ridden neighborhoods",
+          "outlet": "GeekWire",
+          "date": "2012-01",
+          "url": "http://www.geekwire.com/2012/new-microsoft-patent-walking-directions-that-avoid-bad-neighborhoods",
+          "archive_url": "https://web.archive.org/web/20120106092815/http://www.geekwire.com/2012/new-microsoft-patent-walking-directions-that-avoid-bad-neighborhoods",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Microsoft \"avoid ghetto\" patent sparks controversy",
+          "outlet": "CBS News",
+          "date": "2012-01",
+          "url": "http://www.cbsnews.com/news/microsoft-avoid-ghetto-patent-sparks-controversy",
+          "archive_url": "https://web.archive.org/web/20140401024731/http://www.cbsnews.com/news/microsoft-avoid-ghetto-patent-sparks-controversy",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Microsoft Patents \"Avoid Ghetto\" Feature for GPS Devices",
+          "outlet": "MacTrast",
+          "date": "2012-01",
+          "url": "http://www.mactrast.com/2012/01/microsoft-patents-avoid-ghetto-feature-for-gps-devices/",
+          "archive_url": "https://web.archive.org/web/20120112113741/http://www.mactrast.com/2012/01/microsoft-patents-avoid-ghetto-feature-for-gps-devices/",
+          "checked": true,
+          "checked_via": "Wayback snapshot <title>",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Microsoft was granted US Patent 8,090,532, 'Pedestrian route production' (filed 2007), which describes walking directions that route around neighborhoods whose violent-crime statistics exceed a threshold, as well as around bad weather. Press coverage labeled it an 'avoid ghetto' feature; that phrase does not appear in the patent.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Microsoft declined to comment. The patent stood. It is unclear whether the technique was ever deployed in Bing Maps.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "residents-of-labeled-neighborhoods"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Microsoft",
+          "summary": "Declined to comment to CBS Seattle.",
+          "url": "https://www.mactrast.com/2012/01/microsoft-patents-avoid-ghetto-feature-for-gps-devices/",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20120111080110/http://www.mactrast.com/2012/01/microsoft-patents-avoid-ghetto-feature-for-gps-devices/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "US Patent 8,090,532 (Google Patents)",
+          "url": "https://patents.google.com/patent/US8090532B2/en",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20191230083106/https://patents.google.com/patent/US8090532B2/en"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "1",
+          "note": "Data Power intro; Thatcher 2014"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "metadata-kill-2014",
+      "playable": true,
+      "title": "'We kill people based on metadata'",
+      "date": "2014-05",
+      "spatial": true,
+      "data_type": "phone-metadata",
+      "companies": [
+        "NSA"
+      ],
+      "redact": [
+        "NSA",
+        "SKYNET"
+      ],
+      "redaction_label": "a spy agency",
+      "headlines": [
+        {
+          "text": "Ex-NSA Chief: ‘We Kill People Based on Metadata’",
+          "outlet": "ABC News",
+          "date": "2014-05",
+          "url": "http://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata/",
+          "archive_url": "https://web.archive.org/web/20140531101049/http://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "U.S. Government Designated Prominent Al Jazeera Journalist as \"Member of Al Qaeda\"",
+          "outlet": "The Intercept",
+          "date": "2015-05-08",
+          "url": "https://theintercept.com/2015/05/08/u-s-government-designated-prominent-al-jazeera-journalist-al-qaeda-member-put-watch-list/",
+          "archive_url": "https://web.archive.org/web/20150927062244/https://theintercept.com/2015/05/08/u-s-government-designated-prominent-al-jazeera-journalist-al-qaeda-member-put-watch-list/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "aftermath"
+        },
+        {
+          "text": "The NSA’s SKYNET program may be killing thousands of innocent people",
+          "outlet": "Ars Technica",
+          "date": "2016-02",
+          "url": "https://arstechnica.com/information-technology/2016/02/the-nsas-skynet-program-may-be-killing-thousands-of-innocent-people/",
+          "archive_url": "https://web.archive.org/web/20171202002738/https://arstechnica.com/information-technology/2016/02/the-nsas-skynet-program-may-be-killing-thousands-of-innocent-people/",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "aftermath"
+        }
+      ],
+      "what_happened": {
+        "text": "Former NSA and CIA director Michael Hayden said in 2014 that 'we kill people based on metadata.' Snowden documents published by The Intercept in 2015 described SKYNET, a program that applied machine learning to the mobile phone metadata of about 55 million people in Pakistan to score their likelihood of being couriers for al Qaeda; one slide labeled Al Jazeera's Islamabad bureau chief a member of al Qaeda. A 2016 analysis by statistician Patrick Ball criticized the method as unsound.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "No public change to metadata-based targeting was announced. The NSA did not publicly address the critiques of SKYNET.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "muslim-pro-xmode-2020"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "civilians-in-strike-zones",
+          "journalists"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Ahmad Zaidan",
+          "summary": "Denied membership in al Qaeda or the Muslim Brotherhood; said his contacts were normal journalism.",
+          "url": "https://theintercept.com/2015/05/08/u-s-government-designated-prominent-al-jazeera-journalist-al-qaeda-member-put-watch-list/",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20150927062244/https://theintercept.com/2015/05/08/u-s-government-designated-prominent-al-jazeera-journalist-al-qaeda-member-put-watch-list/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Intercept, 8 May 2015",
+          "url": "https://theintercept.com/2015/05/08/u-s-government-designated-prominent-al-jazeera-journalist-al-qaeda-member-put-watch-list/",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20150927062244/https://theintercept.com/2015/05/08/u-s-government-designated-prominent-al-jazeera-journalist-al-qaeda-member-put-watch-list/"
+        },
+        {
+          "label": "Privacy International on the 2016 analysis",
+          "url": "https://privacyinternational.org/examples/1782/nsa-skynet-may-have-killed-thousands-innocent-people",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20200925225146/https://privacyinternational.org/examples/1782/nsa-skynet-may-have-killed-thousands-innocent-people"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "42",
+          "note": "Data Power ch. 1 (drone strikes on phone metadata; Scahill 2015)"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "uber-god-view-2014",
+      "playable": true,
+      "title": "Uber executive tracks a journalist with 'God View'",
+      "date": "2014-11-18",
+      "spatial": true,
+      "data_type": "ride-location",
+      "companies": [
+        "Uber"
+      ],
+      "redact": [
+        "Uber",
+        "God View"
+      ],
+      "redaction_label": "a ride-hailing company",
+      "headlines": [
+        {
+          "text": "Uber Battles Privacy Concerns Over 'God View' Tool",
+          "outlet": "NBC News",
+          "date": "2014-11",
+          "url": "http://www.nbcnews.com/tech/tech-news/uber-battles-privacy-concerns-over-god-view-tool-n251691",
+          "archive_url": "https://web.archive.org/web/20141127141110/http://www.nbcnews.com/tech/tech-news/uber-battles-privacy-concerns-over-god-view-tool-n251691",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "What Is Uber Really Doing With Your Data?",
+          "outlet": "TIME",
+          "date": "2014-11",
+          "url": "http://time.com/3595025/uber-data/",
+          "archive_url": "https://web.archive.org/web/20141130223525/http://time.com/3595025/uber-data/",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "break"
+        },
+        {
+          "text": "Uber is investigating its top New York exec for 'God View' privacy invasion",
+          "outlet": "Management Today",
+          "date": "2014-11",
+          "url": "https://www.managementtoday.co.uk/uber-investigating-its-top-new-york-exec-god-view-privacy-invasion/article/1322659",
+          "archive_url": "https://web.archive.org/web/20190823022749/https://www.managementtoday.co.uk/uber-investigating-its-top-new-york-exec-god-view-privacy-invasion/article/1322659",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "BuzzFeed News reported that Uber's New York general manager, Josh Mohrer, told reporter Johana Bhuiyan he had been tracking her ride to an interview, using an internal tool employees called 'God View' that showed the real-time locations of cars and riders. Former employees said corporate staff had broad access to it.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Uber said it disciplined Mohrer. In January 2016 Uber paid $20,000 to the New York Attorney General and agreed to encrypt location data. In 2017 it settled FTC charges about employee access to customer data, agreeing to 20 years of privacy audits without admitting wrongdoing.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "journalists",
+          "riders"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Uber",
+          "summary": "Told NBC News that access to data is permitted only for legitimate business purposes and that violations lead to disciplinary action.",
+          "url": "http://www.nbcnews.com/tech/tech-news/uber-battles-privacy-concerns-over-god-view-tool-n251691",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20141127141110/http://www.nbcnews.com/tech/tech-news/uber-battles-privacy-concerns-over-god-view-tool-n251691"
+        }
+      ],
+      "sources": [
+        {
+          "label": "CNBC on the FTC settlement, Aug 2017",
+          "url": "https://www.cnbc.com/2017/08/15/uber-ftc-case-over-data-privacy-has-been-settled.html",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20170815152855/https://www.cnbc.com/2017/08/15/uber-ftc-case-over-data-privacy-has-been-settled.html"
+        },
+        {
+          "label": "InformationWeek on the NYAG settlement",
+          "url": "https://www.informationweek.com/mobile/mobile-applications/uber-settles-god-view-and-data-breach-investigation/d/d-id/1323801",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20160109112955/http://www.informationweek.com/mobile/mobile-applications/uber-settles-god-view-and-data-breach-investigation/d/d-id/1323801"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "nyc-taxi-2014",
+      "playable": true,
+      "title": "'Anonymized' NYC taxi data reveals drivers and passengers",
+      "date": "2014-06-23",
+      "spatial": true,
+      "data_type": "trip-records",
+      "companies": [
+        "NYC Taxi and Limousine Commission"
+      ],
+      "redact": [
+        "Taxi and Limousine Commission",
+        "TLC"
+      ],
+      "redaction_label": "a city agency",
+      "headlines": [
+        {
+          "text": "Poorly anonymized logs reveal NYC cab drivers’ detailed whereabouts",
+          "outlet": "Ars Technica",
+          "date": "2014-06",
+          "url": "http://arstechnica.com/tech-policy/2014/06/poorly-anonymized-logs-reveal-nyc-cab-drivers-detailed-whereabouts/",
+          "archive_url": "https://web.archive.org/web/20140625140009/http://arstechnica.com/tech-policy/2014/06/poorly-anonymized-logs-reveal-nyc-cab-drivers-detailed-whereabouts/",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "break"
+        },
+        {
+          "text": "Improperly anonymized taxi logs reveal drivers’ identity, movements",
+          "outlet": "Help Net Security",
+          "date": "2014-06-24",
+          "url": "https://www.helpnetsecurity.com/2014/06/24/improperly-anonymized-taxi-logs-reveal-drivers-identity-movements/",
+          "archive_url": "https://web.archive.org/web/20191213152101/https://www.helpnetsecurity.com/2014/06/24/improperly-anonymized-taxi-logs-reveal-drivers-identity-movements/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Deanonymizing Taxi Passenger and Fare Data",
+          "outlet": "Schneier on Security",
+          "date": "2014-10",
+          "url": "https://www.schneier.com/blog/archives/2014/10/deanonymizing_t.html",
+          "archive_url": "https://web.archive.org/web/20150405011054/https://www.schneier.com/blog/archives/2014/10/deanonymizing_t.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot <title>",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Chris Whong obtained 2013 trip records for about 173 million New York City taxi rides through a freedom-of-information request and published them. The medallion and license numbers had been hashed with MD5, and Vijay Pandurangan reversed them in under two hours. Researcher Anthony Tockar then matched rides to paparazzi photos of celebrities, and showed how the data could reveal the home addresses of regular visitors to a strip club.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft",
+        "scored": false
+      },
+      "outcome_detail": {
+        "text": "No public response from the Taxi and Limousine Commission was found.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "nyt-apps-know-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "drivers",
+          "passengers"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [],
+      "sources": [
+        {
+          "label": "Pandurangan's write-up",
+          "url": "https://medium.com/@vijayp/f6bc289679a1",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20140701052443/https://medium.com/@vijayp/f6bc289679a1"
+        },
+        {
+          "label": "Gotham Gazette on the TLC and FOIL",
+          "url": "https://www.gothamgazette.com/government/5125-tlc-taxi-cab-confession-open-data-foil-transparency",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20191206103710/https://www.gothamgazette.com/government/5125-tlc-taxi-cab-confession-open-data-foil-transparency"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "runkeeper-yau-2014",
+      "playable": false,
+      "title": "Public running-app routes mapped city by city",
+      "date": "2014-02-05",
+      "spatial": true,
+      "data_type": "fitness-gps",
+      "companies": [
+        "RunKeeper"
+      ],
+      "redact": [
+        "RunKeeper"
+      ],
+      "redaction_label": "a running app",
+      "headlines": [],
+      "what_happened": {
+        "text": "Data visualizer Nathan Yau, building on work by Nikita Barsukov, scraped public RunKeeper routes and mapped where people run in major US cities. Precedent-only entry; not played as a card.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": null,
+        "by": null
+      },
+      "outcome_detail": {
+        "text": null,
+        "by": null
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "strava-heatmap-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [],
+      "sources": [
+        {
+          "label": "FlowingData, 5 Feb 2014",
+          "url": "https://flowingdata.com/2014/02/05/where-people-run/",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20260206173829/https://flowingdata.com/2014/02/05/where-people-run/"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "43–44",
+          "note": "Data Power ch. 1, Figs 1.5–1.6"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "chain-home-office-2017",
+      "playable": true,
+      "title": "Homelessness outreach data used to locate and deport EU rough sleepers",
+      "date": "2017-08-20",
+      "spatial": true,
+      "data_type": "outreach-records",
+      "companies": [
+        "Home Office",
+        "Greater London Authority",
+        "St Mungo's",
+        "Thames Reach"
+      ],
+      "redact": [
+        "Home Office",
+        "Greater London Authority",
+        "GLA",
+        "St Mungo's",
+        "St Mungos",
+        "Thames Reach",
+        "CHAIN"
+      ],
+      "redaction_label": "a government",
+      "headlines": [
+        {
+          "text": "Home Office used charity data map to deport rough sleepers",
+          "outlet": "The Guardian (The Observer)",
+          "date": "2017-08-19",
+          "url": "https://www.theguardian.com/uk-news/2017/aug/19/home-office-secret-emails-data-homeless-eu-nationals",
+          "archive_url": "https://web.archive.org/web/20170821003015/https://www.theguardian.com/uk-news/2017/aug/19/home-office-secret-emails-data-homeless-eu-nationals",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Liberty exposes secret data-sharing deal between Greater London Authority and Home Office to deport rough sleepers",
+          "outlet": "Liberty (press release)",
+          "date": "2017-08-20",
+          "url": "https://www.libertyhumanrights.org.uk/issue/liberty-exposes-secret-data-sharing-deal-between-greater-london-authority-and-home-office-to-deport-rough-sleepers/",
+          "archive_url": "https://web.archive.org/web/20231206053023/https://www.libertyhumanrights.org.uk/issue/liberty-exposes-secret-data-sharing-deal-between-greater-london-authority-and-home-office-to-deport-rough-sleepers/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Charity may have shared rough sleepers' data without consent, watchdog finds",
+          "outlet": "Yahoo News UK",
+          "date": "2018",
+          "url": "https://uk.news.yahoo.com/st-mungo-apos-likely-given-151304733.html",
+          "archive_url": "https://web.archive.org/web/20180922140259/https://uk.news.yahoo.com/st-mungo-apos-likely-given-151304733.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "aftermath"
+        }
+      ],
+      "what_happened": {
+        "text": "Freedom-of-information requests by Liberty showed that Home Office immigration enforcement had access, from September 2016 to February 2017, to an interactive map built by the Greater London Authority from CHAIN, the London rough-sleeper database that charity outreach workers populate with details including nationality and regular sleeping locations. The Home Office was then detaining and removing EU nationals for sleeping rough.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "ruling-law",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "On 14 December 2017 the High Court (R (Gureckis) v SSHD [2017] EWHC 3298 (Admin)) ruled the Home Office policy of removing EU nationals for rough sleeping unlawful. The ruling concerned the removal policy, not the data sharing itself. The claimants were supported by the Public Interest Law Unit at Lambeth Law Centre and North East London Migrant Action. The Home Office said it stopped such operations after the ruling. In 2018 the ICO found St Mungo's had likely shared data without consent but had a public-interest defence.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "rough-sleepers",
+          "eu-migrants"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Greater London Authority",
+          "summary": "Said it did not send CHAIN data to the Home Office, which instead had access to an online tool showing mapped CHAIN data.",
+          "url": "https://www.london.gov.uk/media/56960/download",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20261015215334/https://www.london.gov.uk/media/56960/download"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Liberty press release, 20 Aug 2017",
+          "url": "https://libertyhumanrights.org.uk/issue/liberty-exposes-secret-data-sharing-deal-between-greater-london-authority-and-home-office-to-deport-rough-sleepers",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20231206053023/https://www.libertyhumanrights.org.uk/issue/liberty-exposes-secret-data-sharing-deal-between-greater-london-authority-and-home-office-to-deport-rough-sleepers/"
+        },
+        {
+          "label": "PILU/NELMA factsheet on the judgment",
+          "url": "https://www.housing-rights.info/docs/Rough-sleeper-removals-factsheet-for-organisations.pdf",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20220120135454/https://www.housing-rights.info/docs/Rough-sleeper-removals-factsheet-for-organisations.pdf"
+        },
+        {
+          "label": "Corporate Watch on the court victory",
+          "url": "https://corporatewatch.org/?p=4886",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20190324095748/https://corporatewatch.org/court-victory-against-st-mungos-and-thames-reach-rough-sleeper-raids-what-next/"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "10, 37–38",
+          "note": "Data Power intro and ch. 1; Dalton et al. 2020"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "strava-heatmap-2018",
+      "playable": true,
+      "title": "Strava's Global Heatmap reveals military bases",
+      "date": "2018-01-27",
+      "spatial": true,
+      "data_type": "fitness-gps",
+      "companies": [
+        "Strava"
+      ],
+      "redact": [
+        "Strava"
+      ],
+      "redaction_label": "a fitness app",
+      "headlines": [
+        {
+          "text": "Fitness tracking app Strava gives away location of secret US army bases",
+          "outlet": "The Guardian",
+          "date": "2018-01-28",
+          "url": "https://www.theguardian.com/world/2018/jan/28/fitness-tracking-app-gives-away-location-of-secret-us-army-bases",
+          "archive_url": "https://web.archive.org/web/20180129000625/https://www.theguardian.com/world/2018/jan/28/fitness-tracking-app-gives-away-location-of-secret-us-army-bases",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "U.S. soldiers are revealing sensitive and dangerous information by jogging",
+          "outlet": "The Washington Post",
+          "date": "2018-01-28",
+          "url": "https://www.washingtonpost.com/world/a-map-showing-the-users-of-fitness-devices-lets-the-world-see-where-us-soldiers-are-and-what-they-are-doing/2018/01/28/86915662-0441-11e8-aa61-f3391373867e_story.html",
+          "archive_url": "https://web.archive.org/web/20180130002401/https://www.washingtonpost.com/world/a-map-showing-the-users-of-fitness-devices-lets-the-world-see-where-us-soldiers-are-and-what-they-are-doing/2018/01/28/86915662-0441-11e8-aa61-f3391373867e_story.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Fitness app data is revealing military bases to enemy fighters",
+          "outlet": "MIT Technology Review",
+          "date": "2018-01-29",
+          "url": "https://www.technologyreview.com/2018/01/29/145967/fitness-app-data-is-revealing-military-bases-to-enemy-fighters/",
+          "archive_url": "https://web.archive.org/web/20200815145041/https://www.technologyreview.com/2018/01/29/145967/fitness-app-data-is-revealing-military-bases-to-enemy-fighters/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Strava published a Global Heatmap in November 2017 built from about a billion uploaded activities. On 27 January 2018 analyst Nathan Ruser posted that it made US bases 'clearly identifiable and mappable', and others found bases and patrol routes in Afghanistan, Syria and elsewhere, where nearly all Strava users were military personnel.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "In March 2018 Strava limited street-level detail to logged-in users, required several athletes before low-traffic routes showed heat, and moved to monthly refreshes that drop data set to private. In August 2018 the Pentagon barred deployed personnel from using geolocation features in operational areas.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "runkeeper-yau-2014"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "polar-flow-2018",
+          "stravaleaks-2024"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "military-personnel"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Strava",
+          "summary": "Said the map excluded activities marked private and user-defined privacy zones, and that it would work with military and government officials on sensitive areas.",
+          "url": "https://www.engadget.com/2018/03/13/after-exposing-secret-military-bases-strava-restricts-data-visi/",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20180313224600/https://www.engadget.com/2018/03/13/after-exposing-secret-military-bases-strava-restricts-data-visi/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Engadget on Strava's March 2018 changes",
+          "url": "https://www.engadget.com/2018/03/13/after-exposing-secret-military-bases-strava-restricts-data-visi/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20180313224600/https://www.engadget.com/2018/03/13/after-exposing-secret-military-bases-strava-restricts-data-visi/"
+        },
+        {
+          "label": "CNN on the changes",
+          "url": "https://money.cnn.com/2018/03/13/technology/strava-privacy-update-settings",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20180314012245/http://money.cnn.com/2018/03/13/technology/strava-privacy-update-settings/"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "1, 35–38",
+          "note": "Data Power intro and ch. 1, Fig. 1.4"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "cambridge-analytica-2018",
+      "playable": true,
+      "title": "Cambridge Analytica harvested Facebook profiles",
+      "date": "2018-03-17",
+      "spatial": false,
+      "data_type": "social-profiles",
+      "companies": [
+        "Facebook",
+        "Cambridge Analytica"
+      ],
+      "redact": [
+        "Facebook",
+        "Cambridge Analytica"
+      ],
+      "redaction_label": "a social network",
+      "headlines": [
+        {
+          "text": "Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach",
+          "outlet": "The Guardian (The Observer)",
+          "date": "2018-03-17",
+          "url": "https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+          "archive_url": "https://web.archive.org/web/20180317234541/https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "How Trump Consultants Exploited the Facebook Data of Millions",
+          "outlet": "The New York Times",
+          "date": "2018-03-17",
+          "url": "https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html",
+          "archive_url": "https://web.archive.org/web/20180318235001/https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "The Observer and The New York Times reported, based on whistleblower Christopher Wylie, that Cambridge Analytica had obtained data on tens of millions of Facebook users through a personality-quiz app built by researcher Aleksandr Kogan, and used it to profile US voters. Facebook later put the number of affected users at up to 87 million.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Cambridge Analytica shut down in May 2018. In July 2019 the FTC fined Facebook $5 billion and imposed new privacy restrictions.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Facebook (Mark Zuckerberg)",
+          "summary": "Called the episode a breach of trust and said Facebook would audit apps that had accessed large amounts of data before it tightened its rules in 2014, and ban those that broke them.",
+          "url": "https://www.technologyreview.com/2018/03/21/3153/mark-zuckerberg-finally-admits-huge-data-scandal-is-a-breach-of-trust-between/",
+          "archive_url": "https://web.archive.org/web/20200811195830/https://www.technologyreview.com/2018/03/21/3153/mark-zuckerberg-finally-admits-huge-data-scandal-is-a-breach-of-trust-between/",
+          "by": "claude",
+          "status": "draft"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Privacy International summary",
+          "url": "https://privacyinternational.org/examples/2149/cambridge-analyticas-harvesting-50-million-facebook-profiles",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20200927135749/https://privacyinternational.org/examples/2149/cambridge-analyticas-harvesting-50-million-facebook-profiles"
+        },
+        {
+          "label": "FTC, 24 Jul 2019",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+          "archive_url": "https://web.archive.org/web/20220318065928/https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook",
+          "kind": "primary"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "67–68",
+          "note": "Data Power ch. 3"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "polar-flow-2018",
+      "playable": true,
+      "title": "Polar Flow reveals home addresses of soldiers and spies",
+      "date": "2018-07-08",
+      "spatial": true,
+      "data_type": "fitness-gps",
+      "companies": [
+        "Polar"
+      ],
+      "redact": [
+        "Polar Flow",
+        "Polar"
+      ],
+      "redaction_label": "a fitness app",
+      "headlines": [
+        {
+          "text": "Fitness app Polar Flow reveals home addresses of soldiers, spies",
+          "outlet": "Help Net Security",
+          "date": "2018-07-09",
+          "url": "https://www.helpnetsecurity.com/2018/07/09/polar-flow-privacy-fail/",
+          "archive_url": "https://web.archive.org/web/20180709155838/https://www.helpnetsecurity.com/2018/07/09/polar-flow-privacy-fail/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Another fitness app reveals data that can be used to identify soldiers and spies",
+          "outlet": "MIT Technology Review",
+          "date": "2018-07-09",
+          "url": "https://www.technologyreview.com/2018/07/09/141548/another-fitness-app-reveals-data-that-can-be-used-to-identify-soldiers-and-spies/",
+          "archive_url": "https://web.archive.org/web/20200926003432/https://www.technologyreview.com/2018/07/09/141548/another-fitness-app-reveals-data-that-can-be-used-to-identify-soldiers-and-spies/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Polar fitness app broadcasted sensitive data of intelligence and military personnel",
+          "outlet": "Security Affairs",
+          "date": "2018-07",
+          "url": "https://securityaffairs.com/74324/digital-id/polar-data-leak.html",
+          "archive_url": "https://web.archive.org/web/20230401234056/https://securityaffairs.com/74324/digital-id/polar-data-leak.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Bellingcat and De Correspondent showed that Polar's public Explore map let anyone view all of a user's workouts on one map, revealing where people likely lived. They identified 6,460 users of 69 nationalities who exercised at about 200 sensitive sites, including military bases and intelligence agencies. An oversight meant some private profiles were also exposed.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "product-pulled",
+        "by": "claude",
+        "status": "draft",
+        "scored": false
+      },
+      "outcome_detail": {
+        "text": "Polar temporarily suspended its Explore feature.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "strava-heatmap-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "stravaleaks-2024"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "military-personnel",
+          "intelligence-personnel"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [],
+      "sources": [
+        {
+          "label": "WeLiveSecurity, 11 Jul 2018",
+          "url": "https://welivesecurity.com/2018/07/11/polar-flow-app-exposes-geolocation-data-soldiers-secret-agents",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20180711133633/https://www.welivesecurity.com/2018/07/11/polar-flow-app-exposes-geolocation-data-soldiers-secret-agents/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "google-location-off-2018",
+      "playable": true,
+      "title": "Google keeps tracking location with Location History off",
+      "date": "2018-08-13",
+      "spatial": true,
+      "data_type": "account-location",
+      "companies": [
+        "Google"
+      ],
+      "redact": [
+        "Google",
+        "Location History"
+      ],
+      "redaction_label": "a search company",
+      "headlines": [
+        {
+          "text": "AP Exclusive: Google tracks your movements, like it or not",
+          "outlet": "Associated Press",
+          "date": "2018-08-13",
+          "url": "https://apnews.com/article/828aefab64d4411bac257a07c1af0ecb",
+          "archive_url": "https://web.archive.org/web/20201014041004/https://apnews.com/article/828aefab64d4411bac257a07c1af0ecb",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Google still tracks your location even when you turn off Location History",
+          "outlet": "Android Central",
+          "date": "2018-08",
+          "url": "https://www.androidcentral.com/google-still-tracks-your-location-even-when-you-turn-location-history",
+          "archive_url": "https://web.archive.org/web/20180815123330/https://www.androidcentral.com/google-still-tracks-your-location-even-when-you-turn-location-history",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "40 States Settle Google Location-Tracking Charges For $392M",
+          "outlet": "Associated Press (via WTTW)",
+          "date": "2022-11-14",
+          "url": "https://news.wttw.com/node/42145",
+          "archive_url": "https://web.archive.org/web/20221114195428/https://news.wttw.com/node/42145",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "aftermath"
+        }
+      ],
+      "what_happened": {
+        "text": "An Associated Press investigation, confirmed by Princeton researchers, found that many Google services on Android and iPhone stored timestamped location data even when users had turned off 'Location History', for example when opening Google Maps or running some searches. Google's help page had said that with Location History off, the places you go are no longer stored.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Google changed its help-page wording. In November 2022 it agreed to pay $391.5 million to 40 states, which the attorneys general called the largest multistate privacy settlement in US history.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "iphone-consolidated-db-2011"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Google",
+          "summary": "A spokesperson told the AP that it provides clear descriptions of its location tools and controls that let people turn them on or off.",
+          "url": "https://apnews.com/article/828aefab64d4411bac257a07c1af0ecb",
+          "archive_url": "https://web.archive.org/web/20201014041004/https://apnews.com/article/828aefab64d4411bac257a07c1af0ecb",
+          "by": "claude",
+          "status": "draft"
+        }
+      ],
+      "sources": [
+        {
+          "label": "AP on the 2022 settlement (via WTTW)",
+          "url": "https://news.wttw.com/node/42145",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20221114195428/https://news.wttw.com/node/42145"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "nyt-apps-know-2018",
+      "playable": true,
+      "title": "Apps sell precise location data to dozens of companies",
+      "date": "2018-12-10",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "(75+ location-data companies)"
+      ],
+      "redact": [],
+      "redaction_label": "apps",
+      "headlines": [
+        {
+          "text": "Your Apps Know Where You Were Last Night, and They’re Not Keeping It Secret",
+          "outlet": "The New York Times",
+          "date": "2018-12-10",
+          "url": "https://www.nytimes.com/interactive/2018/12/10/business/location-data-privacy-apps.html",
+          "archive_url": "https://web.archive.org/web/20181211000053/https://www.nytimes.com/interactive/2018/12/10/business/location-data-privacy-apps.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "A New York Times investigation found at least 75 companies receiving precise location data from apps, some claiming to track up to 200 million US devices. Reporters analyzed a database of more than a million phones in the New York area, updated in some cases more than 14,000 times a day, and identified individuals in it who agreed to be named. App permission prompts often did not say the data would be sold.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft",
+        "scored": false
+      },
+      "outcome_detail": {
+        "text": "No regulatory action directly followed the investigation.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "nyc-taxi-2014"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "wsj-venntel-2020",
+          "pillar-grindr-2021",
+          "kochava-2022",
+          "gravy-2025"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [],
+      "sources": [
+        {
+          "label": "SPJ awards entry for the investigation",
+          "url": "https://awards.journalists.org/entries/your-apps-know-where-you-were-last-night-and-theyre-not-keeping-it-secret/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20260613090539/https://awards.journalists.org/entries/your-apps-know-where-you-were-last-night-and-theyre-not-keeping-it-secret/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "bounty-hunter-carriers-2019",
+      "playable": true,
+      "title": "Bounty hunters buy real-time phone locations from carriers' data",
+      "date": "2019-01-08",
+      "spatial": true,
+      "data_type": "carrier-location",
+      "companies": [
+        "T-Mobile",
+        "AT&T",
+        "Sprint",
+        "Verizon",
+        "LocationSmart",
+        "Zumigo",
+        "MicroBilt"
+      ],
+      "redact": [
+        "T-Mobile",
+        "AT&T",
+        "Sprint",
+        "Verizon",
+        "LocationSmart",
+        "Zumigo",
+        "MicroBilt"
+      ],
+      "redaction_label": "a phone carrier",
+      "headlines": [
+        {
+          "text": "I Gave a Bounty Hunter $300. Then He Located Our Phone",
+          "outlet": "Motherboard (Vice)",
+          "date": "2019-01-08",
+          "url": "https://www.vice.com/en/article/nepxbz/i-gave-a-bounty-hunter-300-dollars-located-phone-microbilt-zumigo-tmobile",
+          "archive_url": "https://web.archive.org/web/20200930060630/https://www.vice.com/en/article/nepxbz/i-gave-a-bounty-hunter-300-dollars-located-phone-microbilt-zumigo-tmobile",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "note": "Page metadata title differs: 'T-Mobile, Sprint, and AT&T Are Selling Customers' Real-Time Location Data, And It's Falling Into the Wrong Hands'.",
+          "phase": "break"
+        },
+        {
+          "text": "FCC seeks $200M in total fines against top wireless carriers",
+          "outlet": "Axios",
+          "date": "2020-02",
+          "url": "https://www.axios.com/fcc-seeks-200m-from-top-wireless-carriers-over-location-data-flap-01c87f1a-41b2-4a11-88e1-af88a667a79d.html",
+          "archive_url": "https://web.archive.org/web/20200229154928/https://www.axios.com/fcc-seeks-200m-from-top-wireless-carriers-over-location-data-flap-01c87f1a-41b2-4a11-88e1-af88a667a79d.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "aftermath"
+        }
+      ],
+      "what_happened": {
+        "text": "Motherboard paid a bounty hunter $300 to locate a T-Mobile phone, which he did using real-time location data that the carrier had made available through data aggregators such as LocationSmart and Zumigo, which resold it.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "The carriers said they had ended or would end their aggregator programs. The FCC proposed about $209 million in fines in 2020 and finalized about $200 million in April 2024. In April 2025 the Fifth Circuit vacated AT&T's $57 million fine on jury-trial grounds; the government asked the Supreme Court to review amid conflicting rulings in other circuits.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "wsj-venntel-2020"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "T-Mobile",
+          "summary": "Said it ended its location-aggregator program in February 2019 and would dispute the fine.",
+          "url": "https://www.fierce-network.com/regulatory/t-mobile-to-fight-91m-fcc-fine-over-location-data-sales",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20240415132518/https://www.fierce-network.com/regulatory/t-mobile-to-fight-91m-fcc-fine-over-location-data-sales"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Sen. Wyden on the FCC fines",
+          "url": "https://www.wyden.senate.gov/news/press-releases/wyden-praises-fcc-fines-on-wireless-carriers-in-response-to-his-investigation-into-abuse-of-location-data",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20260315024741/https://www.wyden.senate.gov/news/press-releases/wyden-praises-fcc-fines-on-wireless-carriers-in-response-to-his-investigation-into-abuse-of-location-data"
+        },
+        {
+          "label": "Benton Institute on the Fifth Circuit ruling",
+          "url": "https://www.benton.org/headlines/fifth-circuit-vacates-fccs-fine-att-customer-data-case",
+          "archive_url": "https://web.archive.org/web/20250423194939/https://www.benton.org/headlines/fifth-circuit-vacates-fccs-fine-att-customer-data-case",
+          "kind": "press"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "wsj-venntel-2020",
+      "playable": true,
+      "title": "Immigration agencies buy app location data",
+      "date": "2020-02-07",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "Venntel",
+        "ICE",
+        "CBP"
+      ],
+      "redact": [
+        "Venntel",
+        "ICE",
+        "CBP"
+      ],
+      "redaction_label": "a federal agency",
+      "headlines": [
+        {
+          "text": "Federal Agencies Use Cellphone Location Data for Immigration Enforcement",
+          "outlet": "The Wall Street Journal",
+          "date": "2020-02-07",
+          "url": "https://www.wsj.com/articles/federal-agencies-use-cellphone-location-data-for-immigration-enforcement-11581078600",
+          "archive_url": "https://web.archive.org/web/20200208000038/https://www.wsj.com/articles/federal-agencies-use-cellphone-location-data-for-immigration-enforcement-11581078600",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Trump's immigration enforcement agents use cellphone location data to track individuals for detention - WSJ",
+          "outlet": "Boing Boing",
+          "date": "2020-02-07",
+          "url": "https://boingboing.net/2020/02/07/trumps-immigration-enforceme.html",
+          "archive_url": "https://web.archive.org/web/20200208044626/https://boingboing.net/2020/02/07/trumps-immigration-enforceme.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "ICE, CBP Purchase Phone Location Data to Enforce Immigration Law: Report",
+          "outlet": "National Review (via Yahoo News)",
+          "date": "2020-02",
+          "url": "https://news.yahoo.com/ice-cbp-purchase-phone-location-152705999.html",
+          "archive_url": "https://web.archive.org/web/20200209143513/https://news.yahoo.com/ice-cbp-purchase-phone-location-152705999.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "The Wall Street Journal reported that ICE and CBP had bought access to a commercial database of phone movements, drawn from ordinary apps such as games and weather apps, from Venntel, and used it for immigration and border enforcement. Because the data was bought rather than demanded from carriers, the government treated it as outside the warrant requirement of Carpenter v. United States (2018).",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "The House Oversight Committee opened an investigation, and CBP renewed its Venntel contract. Later FOIA records showed DHS temporarily paused some Venntel-based projects over legal questions. Venntel's parent, Gravy Analytics, came under an FTC order in January 2025.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "nyt-apps-know-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "gravy-2025"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "immigrants"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "ICE",
+          "summary": "A spokesman said the agency 'generally' did not use the data for deportation operations.",
+          "url": "https://news.yahoo.com/ice-cbp-purchase-phone-location-152705999.html",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20200209143513/https://news.yahoo.com/ice-cbp-purchase-phone-location-152705999.html"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ACLU on DHS location-data records",
+          "url": "https://www.aclu.org/news/privacy-technology/new-records-detail-dhs-purchase-and-use-of-vast-quantities-of-cell-phone-location-data",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20220718112328/https://www.aclu.org/news/privacy-technology/new-records-detail-dhs-purchase-and-use-of-vast-quantities-of-cell-phone-location-data"
+        },
+        {
+          "label": "Techdirt follow-up, Oct 2020",
+          "url": "https://www.techdirt.com/2020/10/16/location-data-obtained-cbp-comes-phone-apps-is-capable-tracking-people-both-sides-border/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20220315223907/https://www.techdirt.com/2020/10/16/location-data-obtained-cbp-comes-phone-apps-is-capable-tracking-people-both-sides-border/"
+        }
+      ],
+      "book_refs": [
+        {
+          "pages": "58",
+          "note": "Data Power ch. 2 (agencies purchasing data to circumvent warrants; Cox 2021)"
+        }
+      ],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "muslim-pro-xmode-2020",
+      "playable": true,
+      "title": "Reported: prayer app's location data reached US military contractors",
+      "date": "2020-11-16",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "Muslim Pro",
+        "X-Mode",
+        "Babel Street",
+        "US Special Operations Command"
+      ],
+      "redact": [
+        "Muslim Pro",
+        "X-Mode",
+        "Babel Street",
+        "Locate X"
+      ],
+      "redaction_label": "a prayer app",
+      "headlines": [
+        {
+          "text": "How the U.S. Military Buys Location Data from Ordinary Apps",
+          "outlet": "Motherboard (Vice)",
+          "date": "2020-11-16",
+          "url": "https://www.vice.com/en/article/jgqm5x/us-military-location-data-xmode-locate-x",
+          "archive_url": "https://web.archive.org/web/20201117234729/https://www.vice.com/en/article/jgqm5x/us-military-location-data-xmode-locate-x",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "US military buys location data of popular Muslim apps: Report",
+          "outlet": "Al Jazeera",
+          "date": "2020-11-17",
+          "url": "https://www.aljazeera.com/news/2020/11/17/report-us-military-buying-location-data-on-popular-muslim-apps",
+          "archive_url": "https://web.archive.org/web/20201118001736/https://www.aljazeera.com/news/2020/11/17/report-us-military-buying-location-data-on-popular-muslim-apps",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "‘Untrue’: Muslim Pro app denies selling user data to US military",
+          "outlet": "Al Jazeera",
+          "date": "2020-11-18",
+          "url": "https://www.aljazeera.com/news/2020/11/18/muslim-pro-app-denies-selling-user-data-to-us-military",
+          "archive_url": "https://web.archive.org/web/20201118234057/https://www.aljazeera.com/news/2020/11/18/muslim-pro-app-denies-selling-user-data-to-us-military",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Motherboard reported two routes by which app location data reached the US military: Babel Street's Locate X product, bought by US Special Operations Command, and X-Mode, which collected location data through code embedded in apps and sold it to defense contractors. The most prominent app involved was Muslim Pro, a prayer and Quran app with more than 98 million downloads, which did not name X-Mode in its privacy policy. The military confirmed it used such data for overseas special operations.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "product-pulled",
+        "by": "claude",
+        "status": "draft",
+        "also_accept": [
+          "fine-settlement-order"
+        ]
+      },
+      "outcome_detail": {
+        "text": "Muslim Pro ended its data partnerships. In December 2020 Apple and Google banned the X-Mode SDK from their app stores; a January 2021 report said X-Mode was still tracking users. In 2024 the FTC barred X-Mode and its successor Outlogic from selling sensitive location data (proposed January, finalized April).",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "metadata-kill-2014",
+          "nyt-apps-know-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "gravy-2025"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "muslim-users"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Muslim Pro",
+          "summary": "Called the report 'untrue' and denied selling data to the US military, while ending its relationship with X-Mode. Motherboard's analysis found the app had sent location data to X-Mode.",
+          "url": "https://www.aljazeera.com/news/2020/11/18/muslim-pro-app-denies-selling-user-data-to-us-military",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20201118095854/https://www.aljazeera.com/news/2020/11/18/muslim-pro-app-denies-selling-user-data-to-us-military"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Vice on the app store bans",
+          "url": "https://www.vice.com/en/article/apple-google-x-mode-xmode-app-stores",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20250117133646/https://www.vice.com/en/article/apple-google-x-mode-xmode-app-stores/"
+        },
+        {
+          "label": "FTC finalizes X-Mode/Outlogic order, Apr 2024",
+          "url": "https://ftc.gov/news-events/news/press-releases/2024/04/ftc-finalizes-order-x-mode-successor-outlogic-prohibiting-it-sharing-or-selling-sensitive-location",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20240412154350/https://www.ftc.gov/news-events/news/press-releases/2024/04/ftc-finalizes-order-x-mode-successor-outlogic-prohibiting-it-sharing-or-selling-sensitive-location"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "pillar-grindr-2021",
+      "playable": true,
+      "title": "Catholic news site uses commercial app data to report on a church official",
+      "date": "2021-07-20",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "Grindr",
+        "(unnamed data vendor)"
+      ],
+      "redact": [
+        "Grindr"
+      ],
+      "redaction_label": "a dating app",
+      "headlines": [
+        {
+          "text": "Priest outed via Grindr app highlights rampant data tracking",
+          "outlet": "Associated Press (via News4Jax)",
+          "date": "2021-07-22",
+          "url": "https://www.news4jax.com/business/2021/07/22/priest-outed-via-grindr-app-highlights-rampant-data-tracking/",
+          "archive_url": "https://web.archive.org/web/20210722175153/https://www.news4jax.com/business/2021/07/22/priest-outed-via-grindr-app-highlights-rampant-data-tracking/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Top U.S. Catholic church official resigns after cellphone data used to track him on Grindr and to gay bars",
+          "outlet": "The Washington Post (via The Philadelphia Inquirer)",
+          "date": "2021-07-20",
+          "url": "https://www.inquirer.com/news/nation-world/monsignor-jeffrey-burrill-resigns-grindr-20210720.html",
+          "archive_url": "https://web.archive.org/web/20210721150726/https://www.inquirer.com/news/nation-world/monsignor-jeffrey-burrill-resigns-grindr-20210720.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "break"
+        },
+        {
+          "text": "How a Catholic Priest Was Outed Using His Own Private Data",
+          "outlet": "The Click",
+          "date": "2021",
+          "url": "https://theclick.news/how-a-catholic-priest-was-outed-using-his-own-private-data/",
+          "archive_url": "https://web.archive.org/web/20220125163833/https://theclick.news/how-a-catholic-priest-was-outed-using-his-own-private-data/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Msgr. Jeffrey Burrill resigned as general secretary of the US Conference of Catholic Bishops ahead of a report by the Catholic outlet The Pillar, which said it had obtained 'commercially available records of app data signals' correlated to his phone showing near-daily Grindr use in parts of 2018 to 2020, including at gay bars. The Pillar did not name its data vendor or say whether it paid.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "No regulatory action followed. Burrill was later reassigned to a parish, and in July 2024 he sued Grindr over the alleged sale of his data.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "nyt-apps-know-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "lgbtq-people"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [],
+      "sources": [
+        {
+          "label": "Metro Weekly on the 2024 lawsuit",
+          "url": "https://metroweekly.com/2024/07/grindr-sued-by-catholic-priest-for-alleged-privacy-breach",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20250811022520/https://www.metroweekly.com/2024/07/grindr-sued-by-catholic-priest-for-alleged-privacy-breach/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "life360-2021",
+      "playable": true,
+      "title": "Family safety app sells families' precise locations",
+      "date": "2021-12-06",
+      "spatial": true,
+      "data_type": "app-location",
+      "companies": [
+        "Life360",
+        "Arity",
+        "Cuebiq",
+        "X-Mode",
+        "SafeGraph"
+      ],
+      "redact": [
+        "Life360"
+      ],
+      "redaction_label": "a family safety app",
+      "headlines": [
+        {
+          "text": "The Popular Family Safety App Life360 Is Selling Precise Location Data on Its Tens of Millions of Users",
+          "outlet": "The Markup",
+          "date": "2021-12-06",
+          "url": "https://themarkup.org/privacy/2021/12/06/the-popular-family-safety-app-life360-is-selling-precise-location-data-on-its-tens-of-millions-of-user",
+          "archive_url": "https://web.archive.org/web/20211206233735/https://themarkup.org/privacy/2021/12/06/the-popular-family-safety-app-life360-is-selling-precise-location-data-on-its-tens-of-millions-of-user",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Life360 reportedly sells precise, identifiable location data",
+          "outlet": "Telecoms.com",
+          "date": "2021-12",
+          "url": "https://telecoms.com/512496/life360-reportedly-sells-precise-identifiable-location-data/",
+          "archive_url": "https://web.archive.org/web/20220119082734/https://telecoms.com/512496/life360-reportedly-sells-precise-identifiable-location-data/",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "The Markup reported, based on two former Life360 employees and two former employees of location-data brokers, that the family-tracking app (about 33 million users) sold precise location data, including on children, to roughly a dozen data brokers that resold it widely. The former employees said the company's anonymization did not prevent re-identification.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Life360 said it would stop selling precise location data to most brokers, but would continue to sell precise data to Arity and aggregated data to Placer.ai.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "children-families"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Life360",
+          "summary": "CEO Chris Hulls said data sales are an important part of the business model that keeps core services free for most users.",
+          "url": "https://thenextweb.com/news/family-safety-app-life360-selling-location-data-millions-users-syndication",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20211207044028/https://thenextweb.com/news/family-safety-app-life360-selling-location-data-millions-users-syndication"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Markup, 6 Dec 2021",
+          "url": "https://themarkup.org/privacy/2021/12/06/the-popular-family-safety-app-life360-is-selling-precise-location-data-on-its-tens-of-millions-of-user",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20211206233735/https://themarkup.org/privacy/2021/12/06/the-popular-family-safety-app-life360-is-selling-precise-location-data-on-its-tens-of-millions-of-user"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "kochava-2022",
+      "playable": true,
+      "title": "FTC sues a data broker over abortion-clinic visit data",
+      "date": "2022-08-29",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "Kochava"
+      ],
+      "redact": [
+        "Kochava"
+      ],
+      "redaction_label": "a data broker",
+      "headlines": [
+        {
+          "text": "FTC Sues ‘Massive’ Data Broker for Selling Location Info on Abortion Clinics",
+          "outlet": "Motherboard (Vice)",
+          "date": "2022-08-29",
+          "url": "https://www.vice.com/en/article/ftc-sues-data-broker-kochava-selling-location-data-abortion-clinics/",
+          "archive_url": "https://web.archive.org/web/20241004151100/https://www.vice.com/en/article/ftc-sues-data-broker-kochava-selling-location-data-abortion-clinics/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "FTC sues data broker for selling sensitive information, including abortion clinic visits",
+          "outlet": "Popular Science",
+          "date": "2022-08",
+          "url": "https://www.popsci.com/technology/ftc-sue-sensitive-data-idaho/",
+          "archive_url": "https://web.archive.org/web/20220831164922/https://www.popsci.com/technology/ftc-sue-sensitive-data-idaho/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "The Fall of Roe Finally Prompts the FTC to Protect Our Location Data",
+          "outlet": "Jezebel",
+          "date": "2022-08",
+          "url": "https://jezebel.com/the-fall-of-roe-finally-prompts-the-ftc-to-protect-our-1849469972",
+          "archive_url": "https://web.archive.org/web/20220902132718/https://jezebel.com/the-fall-of-roe-finally-prompts-the-ftc-to-protect-our-1849469972",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Two months after the Dobbs decision, the FTC sued Kochava, alleging that it sold precise location data tied to mobile advertising IDs that could reveal visits to abortion clinics, places of worship, domestic-violence shelters and other sensitive places. The FTC said Kochava had offered a free sample covering more than 61 million devices over one week.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "A federal judge dismissed the FTC's first complaint in 2023 and allowed it to amend. On 4 May 2026 the FTC announced a proposed order barring Kochava from selling sensitive location data without affirmative express consent.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "nyt-apps-know-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "flock-abortion-2025"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "abortion-seekers",
+          "worshippers",
+          "shelter-residents"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Kochava",
+          "summary": "Its data-marketplace manager told NBC News that 'real progress to improve data privacy for consumers will not be reached through flamboyant press releases and frivolous litigation.'",
+          "url": "https://www.popsci.com/technology/ftc-sue-sensitive-data-idaho/",
+          "archive_url": "https://web.archive.org/web/20220831164922/https://www.popsci.com/technology/ftc-sue-sensitive-data-idaho/",
+          "by": "claude",
+          "status": "draft"
+        }
+      ],
+      "sources": [
+        {
+          "label": "White & Case on the 2026 settlement (JD Supra copy)",
+          "url": "https://www.jdsupra.com/legalnews/ftc-settles-with-data-broker-kochava-8361746/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20261015215657/https://www.jdsupra.com/legalnews/ftc-settles-with-data-broker-kochava-8361746/"
+        },
+        {
+          "label": "Berkeley Consumer Law Center critique, 2026",
+          "url": "https://consumerlaw.berkeley.edu/node/364",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20260907022945/https://consumerlaw.berkeley.edu/node/364"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "fog-reveal-2022",
+      "playable": true,
+      "title": "Police buy access to app location data through Fog Reveal",
+      "date": "2022-08-31",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "Fog Data Science"
+      ],
+      "redact": [
+        "Fog Reveal",
+        "Fog Data Science",
+        "Fog"
+      ],
+      "redaction_label": "a police tech vendor",
+      "headlines": [
+        {
+          "text": "Tech tool offers police ‘mass surveillance on a budget’",
+          "outlet": "Associated Press (via KTVZ)",
+          "date": "2022-08-31",
+          "url": "https://ktvz.com/news/ap-national-news/2022/08/31/tech-tool-offers-police-mass-surveillance-on-a-budget-4/",
+          "archive_url": "https://web.archive.org/web/20220902185103/https://ktvz.com/news/ap-national-news/2022/08/31/tech-tool-offers-police-mass-surveillance-on-a-budget-4/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "How an obscure cellphone tracking tool provides police ‘mass surveillance on a budget’",
+          "outlet": "PBS NewsHour",
+          "date": "2022-09",
+          "url": "https://www.pbs.org/newshour/politics/how-an-obscure-cellphone-tracking-tool-provides-police-mass-surveillance-on-a-budget",
+          "archive_url": "https://web.archive.org/web/20221002102601/https://www.pbs.org/newshour/politics/how-an-obscure-cellphone-tracking-tool-provides-police-mass-surveillance-on-a-budget",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "A joint Associated Press and EFF investigation found that nearly two dozen US law enforcement agencies had contracts for Fog Reveal, a tool that searched hundreds of billions of location records from about 250 million devices, drawn from advertising IDs in apps, to build 'patterns of life', often without a warrant. A basic subscription allowed 100 searches a month.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Members of Congress criticized the tool and some called for an FTC investigation. At least one city (Greensboro, NC) let its contract lapse. No ban or enforcement action was found.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "wsj-venntel-2020"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [
+          "flock-abortion-2025"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Fog Data Science",
+          "summary": "Said it does not hold personal information and that search warrants are not required.",
+          "url": "https://www.theregister.com/2022/09/01/eff_fog_data_broker/",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20220901203224/https://www.theregister.com/2022/09/01/eff_fog_data_broker/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "EFF, 'Lifting the Fog', Dec 2022",
+          "url": "https://www.eff.org/deeplinks/2022/12/lifting-fog-how-eff-unmasked-secretive-police-surveillance-company",
+          "kind": "primary",
+          "archive_url": "https://web.archive.org/web/20221223162318/https://www.eff.org/deeplinks/2022/12/lifting-fog-how-eff-unmasked-secretive-police-surveillance-company"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "airtag-stalking-2022",
+      "playable": true,
+      "title": "Bluetooth trackers used to stalk women",
+      "date": "2022-04-06",
+      "spatial": true,
+      "data_type": "bluetooth-tracker",
+      "companies": [
+        "Apple",
+        "Tile"
+      ],
+      "redact": [
+        "Apple",
+        "AirTag",
+        "AirTags",
+        "Tile",
+        "Tiles"
+      ],
+      "redaction_label": "a tracker",
+      "headlines": [
+        {
+          "text": "I Used Apple AirTags, Tiles and a GPS Tracker to Watch My Husband’s Every Move",
+          "outlet": "The New York Times",
+          "date": "2022-02-11",
+          "url": "https://www.nytimes.com/2022/02/11/technology/airtags-gps-surveillance.html",
+          "archive_url": "https://web.archive.org/web/20220212001451/https://www.nytimes.com/2022/02/11/technology/airtags-gps-surveillance.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Police Records Show Women Are Being Stalked With Apple AirTags Across the Country",
+          "outlet": "Motherboard (Vice)",
+          "date": "2022-04-06",
+          "url": "https://www.vice.com/en/article/apple-airtags-police-reports-stalking-harassment/",
+          "archive_url": "https://web.archive.org/web/20240903052107/https://www.vice.com/en/article/apple-airtags-police-reports-stalking-harassment/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Motherboard obtained 150 police reports mentioning AirTags from eight US departments over eight months; in 50, women reported being alerted that an AirTag they did not own was tracking them, and in 25 of those they suspected a specific man in their lives. A New York Times reporter's test found AirTags tracked well in cities, while Tile and a GPS tracker gave no warning at all.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Apple updated its unwanted-tracking alerts in 2022. A class action was filed in December 2022. Apple and Google announced a cross-platform alert standard in May 2023; Android alerts arrived in 2023 and iOS 17.5 added alerts for other brands' trackers in May 2024.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "women"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [],
+      "sources": [
+        {
+          "label": "The Register on cross-platform alerts, May 2024",
+          "url": "https://www.theregister.com/2024/05/14/android_apple_devices_anti_stalking/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20240514135230/https://www.theregister.com/2024/05/14/android_apple_devices_anti_stalking/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "stravaleaks-2024",
+      "playable": true,
+      "title": "Bodyguards' Strava runs reveal heads of state's whereabouts",
+      "date": "2024-10-27",
+      "spatial": true,
+      "data_type": "fitness-gps",
+      "companies": [
+        "Strava"
+      ],
+      "redact": [
+        "Strava"
+      ],
+      "redaction_label": "a fitness app",
+      "headlines": [
+        {
+          "text": "Fitness app Strava gives away location of Biden, Trump and other leaders, French newspaper says",
+          "outlet": "Associated Press (via KPTV)",
+          "date": "2024-10-29",
+          "url": "https://www.kptv.com/2024/10/29/fitness-app-strava-gives-away-location-biden-trump-other-leaders-french-newspaper-says/",
+          "archive_url": "https://web.archive.org/web/20241102065046/https://www.kptv.com/2024/10/29/fitness-app-strava-gives-away-location-biden-trump-other-leaders-french-newspaper-says/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Merde! Macron's bodyguards reveal his location by sharing Strava data",
+          "outlet": "The Register",
+          "date": "2024-10-29",
+          "url": "https://www.theregister.com/2024/10/29/macron_location_strava/",
+          "archive_url": "https://web.archive.org/web/20241029141532/https://www.theregister.com/2024/10/29/macron_location_strava/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Via Strava: Bodyguards make the whereabouts of heads of state public",
+          "outlet": "heise online",
+          "date": "2024-10",
+          "url": "https://www.heise.de/en/news/Via-Strava-Bodyguards-make-the-whereabouts-of-heads-of-state-public-9997223.html",
+          "archive_url": "https://web.archive.org/web/20260210190611/https://www.heise.de/en/news/Via-Strava-Bodyguards-make-the-whereabouts-of-heads-of-state-public-9997223.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Jogging app Strava reveals locations of heads of state",
+          "outlet": "blue News",
+          "date": "2024-10",
+          "url": "https://www.bluewin.ch/en/news/international/jogging-app-strava-reveals-locations-of-heads-of-state-2430639.html",
+          "archive_url": "https://web.archive.org/web/20241211043049/https://www.bluewin.ch/en/news/international/jogging-app-strava-reveals-locations-of-heads-of-state-2430639.html",
+          "checked": true,
+          "checked_via": "Wayback snapshot og:title",
+          "note": "Kicker above headline: 'Macron, Biden and Putin affected'.",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Le Monde found 26 US Secret Service agents, 12 members of the French presidential security group and six members of Russia's FSO sharing workouts publicly on Strava, from which it could locate leaders including Biden, Harris, Trump, Macron and Putin. One example was a private 2021 weekend Macron spent in Honfleur that was not on his official schedule.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "nothing",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "Some bodyguards made their profiles private or deleted them. The Élysée said the risk was non-existent; the Secret Service said protection was not compromised and that it does not prohibit off-duty personal social media use.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "strava-heatmap-2018",
+          "polar-flow-2018"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "heads-of-state",
+          "security-personnel"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "US Secret Service",
+          "summary": "Said it did not believe protection was compromised; staff cannot use personal devices on duty but are not barred from personal social media off duty.",
+          "url": "https://nsjonline.com/?p=96631",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20261015215405/https://nsjonline.com/article/2024/11/report-fitness-app-reveals-locations-of-trump-biden/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Courthouse News (AP)",
+          "url": "https://www.courthousenews.com/fitness-app-strava-gives-away-location-of-biden-trump-and-other-leaders-french-newspaper-says/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20241030024644/https://www.courthousenews.com/fitness-app-strava-gives-away-location-of-biden-trump-and-other-leaders-french-newspaper-says/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "gravy-2025",
+      "playable": true,
+      "title": "Hack of a location-data broker exposes data from thousands of apps",
+      "date": "2025-01-07",
+      "spatial": true,
+      "data_type": "ad-sdk-location",
+      "companies": [
+        "Gravy Analytics",
+        "Venntel",
+        "Unacast"
+      ],
+      "redact": [
+        "Gravy Analytics",
+        "Gravy",
+        "Venntel",
+        "Unacast"
+      ],
+      "redaction_label": "a data broker",
+      "headlines": [
+        {
+          "text": "Candy Crush, Tinder, MyFitnessPal: See the Thousands of Apps Hijacked to Spy on Your Location",
+          "outlet": "WIRED / 404 Media",
+          "date": "2025-01",
+          "url": "https://www.404media.co/candy-crush-tinder-myfitnesspal-see-the-thousands-of-apps-hijacked-to-spy-on-your-location/",
+          "archive_url": "https://web.archive.org/web/20250126165534/https://www.404media.co/candy-crush-tinder-myfitnesspal-see-the-thousands-of-apps-hijacked-to-spy-on-your-location/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Hackers claim massive breach of company that tracks and sells Americans' location data",
+          "outlet": "Fox News",
+          "date": "2025-01",
+          "url": "https://www.foxnews.com/tech/hackers-claim-massive-breach-company-tracks-sells-americans-location-data.amp",
+          "archive_url": "https://web.archive.org/web/20250125192748/https://www.foxnews.com/tech/hackers-claim-massive-breach-company-tracks-sells-americans-location-data.amp",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Hackers claimed to have breached Gravy Analytics, parent of Venntel, which had sold app-derived location data to US agencies. Gravy's parent Unacast disclosed that its cloud storage had been accessed using a misappropriated access key. Leaked samples named thousands of apps, including games, dating and fitness apps, whose users' locations appeared to have been collected, largely through ad networks.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "fine-settlement-order",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome_detail": {
+        "text": "The FTC had announced a proposed order against Gravy and Venntel on 3 December 2024, before the breach. It finalized the order on 14 January 2025, barring the companies from selling sensitive location data except in limited national-security and law-enforcement circumstances. The FTC said the companies processed over 17 billion signals a day from about a billion devices.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "wsj-venntel-2020",
+          "nyt-apps-know-2018",
+          "muslim-pro-xmode-2020"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "general-public"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Unacast",
+          "summary": "Disclosed unauthorized access to its AWS environment via a misappropriated access key.",
+          "url": "https://mjtsai.com/blog/2025/01/14/gravy-analytics-hacked",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20250114202127/https://mjtsai.com/blog/2025/01/14/gravy-analytics-hacked/"
+        }
+      ],
+      "sources": [
+        {
+          "label": "FTC, 14 Jan 2025",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-finalizes-order-prohibiting-gravy-analytics-venntel-selling-sensitive-location-data",
+          "archive_url": "https://web.archive.org/web/20250116011841/https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-finalizes-order-prohibiting-gravy-analytics-venntel-selling-sensitive-location-data",
+          "kind": "primary"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "flock-abortion-2025",
+      "playable": true,
+      "title": "Reported: a sheriff's plate-camera search logged as 'had an abortion'",
+      "date": "2025-05-29",
+      "spatial": true,
+      "data_type": "license-plate-reads",
+      "companies": [
+        "Flock Safety",
+        "Johnson County (TX) Sheriff's Office"
+      ],
+      "redact": [
+        "Flock Safety",
+        "Flock"
+      ],
+      "redaction_label": "a license-plate camera company",
+      "headlines": [
+        {
+          "text": "A Texas Cop Searched License Plate Cameras Nationwide for a Woman Who Got an Abortion",
+          "outlet": "404 Media",
+          "date": "2025-05",
+          "url": "https://www.404media.co/a-texas-cop-searched-license-plate-cameras-nationwide-for-a-woman-who-got-an-abortion/",
+          "archive_url": "https://web.archive.org/web/20250601051857/https://www.404media.co/a-texas-cop-searched-license-plate-cameras-nationwide-for-a-woman-who-got-an-abortion/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "She Got an Abortion. So A Texas Cop Used 83,000 Cameras to Track Her Down.",
+          "outlet": "Electronic Frontier Foundation",
+          "date": "2025-05",
+          "url": "https://www.eff.org/deeplinks/2025/05/she-got-abortion-so-texas-cop-used-83000-cameras-track-her-down",
+          "archive_url": "https://web.archive.org/web/20250602011704/https://www.eff.org/deeplinks/2025/05/she-got-abortion-so-texas-cop-used-83000-cameras-track-her-down",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Texas officer used Flock ALPR network to search for a woman suspected of abortion",
+          "outlet": "Cybernews",
+          "date": "2025-05",
+          "url": "https://cybernews.com/ai-news/texas-flock-abortion/",
+          "archive_url": "https://web.archive.org/web/20260803185230/https://cybernews.com/ai-news/texas-flock-abortion/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "note": "Page metadata title differs: 'A Texas officer used Flock to track down a woman who got an abortion'.",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "404 Media reported that a Johnson County, Texas, deputy searched Flock's network of more than 83,000 license-plate cameras across 6,809 networks, including in states where abortion is legal, with the logged reason 'had an abortion, search for female.' EFF described the access as 'warrant-less'.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft",
+        "scored": false
+      },
+      "outcome_detail": {
+        "text": "Flock and the sheriff disputed the reporting. Records later reported by EFF include a detective's affidavit describing a death investigation opened after a report of an abortion. Several cities have since voted to end Flock contracts, citing a range of concerns.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [
+          "kochava-2022",
+          "fog-reveal-2022"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "abortion-seekers",
+          "women"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": true,
+      "responses": [
+        {
+          "party": "Johnson County Sheriff's Office and Flock Safety",
+          "summary": "The sheriff said the search was for a missing person whose safety the family feared for; Flock called media accounts 'false', 'misleading' and 'clickbait'.",
+          "url": "https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it",
+          "archive_url": "https://web.archive.org/web/20251015125820/https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it",
+          "by": "claude",
+          "status": "draft"
+        }
+      ],
+      "sources": [
+        {
+          "label": "EFF, Oct 2025",
+          "url": "https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it",
+          "archive_url": "https://web.archive.org/web/20251015125820/https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it",
+          "kind": "press"
+        },
+        {
+          "label": "EFF, May 2025",
+          "url": "https://www.eff.org/deeplinks/2025/05/she-got-abortion-so-texas-cop-used-83000-cameras-track-her-down",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20250531012354/https://www.eff.org/deeplinks/2025/05/she-got-abortion-so-texas-cop-used-83000-cameras-track-her-down"
+        },
+        {
+          "label": "Jalopnik on cities dropping Flock",
+          "url": "https://www.jalopnik.com/2276190/number-of-cities-dropped-flock-cameras-quietly-exploding/",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20261004225036/https://www.jalopnik.com/2276190/number-of-cities-dropped-flock-cameras-quietly-exploding/"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "tea-app-2025",
+      "playable": true,
+      "title": "Women's dating-safety app leaks selfies and IDs, some with GPS",
+      "date": "2025-07-25",
+      "spatial": true,
+      "data_type": "photo-exif",
+      "companies": [
+        "Tea"
+      ],
+      "redact": [
+        "Tea"
+      ],
+      "redaction_label": "a dating-safety app",
+      "headlines": [
+        {
+          "text": "Tea, an app for women to anonymously talk about men they date, has been breached, user IDs exposed",
+          "outlet": "Associated Press (via Fox5 Vegas)",
+          "date": "2025-07-26",
+          "url": "https://www.fox5vegas.com/2025/07/26/tea-an-app-women-anonymously-talk-about-men-they-date-has-been-breached-user-ids-exposed/",
+          "archive_url": "https://web.archive.org/web/20250730213710/https://www.fox5vegas.com/2025/07/26/tea-an-app-women-anonymously-talk-about-men-they-date-has-been-breached-user-ids-exposed/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "The Tea app was intended to help women date safely. Then it got hacked",
+          "outlet": "ABC7 Los Angeles",
+          "date": "2025-07",
+          "url": "https://abc7.com/post/tea-app-was-intended-help-women-date-safely-got-hacked/17332900/",
+          "archive_url": "https://web.archive.org/web/20250730042651/https://abc7.com/post/tea-app-was-intended-help-women-date-safely-got-hacked/17332900/",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        },
+        {
+          "text": "Tea app fallout worsens as leaked selfies used in rating site, online map",
+          "outlet": "FOX Television Stations (via KTVU)",
+          "date": "2025-07",
+          "url": "https://www.ktvu.com/news/tea-app-breach-fallout",
+          "archive_url": "https://web.archive.org/web/20250730182348/https://www.ktvu.com/news/tea-app-breach-fallout",
+          "checked": true,
+          "checked_via": "Wayback snapshot h1",
+          "phase": "break"
+        }
+      ],
+      "what_happened": {
+        "text": "Users of 4chan found an exposed storage system belonging to Tea, an app where women share information about men they date. It held about 72,000 images, including about 13,000 verification selfies and photo IDs, from users who joined before February 2024. Some images carried GPS metadata, and maps of affected women's locations circulated online.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "outcome": {
+        "value": "pr-tweak",
+        "by": "claude",
+        "status": "draft",
+        "scored": false
+      },
+      "outcome_detail": {
+        "text": "Tea said the vulnerability was fixed and new security protocols were in place. It said the leaked verification images had been retained to comply with law-enforcement guidance on cyberbullying.",
+        "by": "claude",
+        "status": "draft"
+      },
+      "precedents": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "recurrences": {
+        "value": [],
+        "by": "claude",
+        "status": "draft"
+      },
+      "harmed": {
+        "value": [
+          "women"
+        ],
+        "by": "claude",
+        "status": "draft"
+      },
+      "contested": false,
+      "responses": [
+        {
+          "party": "Tea",
+          "summary": "Said a legacy data storage system was compromised, no emails or phone numbers were exposed, and the vulnerability was fixed.",
+          "url": "https://www.ktvu.com/news/tea-app-breach-fallout",
+          "by": "claude",
+          "status": "draft",
+          "archive_url": "https://web.archive.org/web/20250730182348/https://www.ktvu.com/news/tea-app-breach-fallout"
+        }
+      ],
+      "sources": [
+        {
+          "label": "INCIBE summary",
+          "url": "https://www.incibe.es/index.php/en/incibe-cert/publications/cybersecurity-highlights/leak-tea-app-exposes-photos-and-locations-thousands-users",
+          "kind": "press",
+          "archive_url": "https://web.archive.org/web/20260617103500/https://www.incibe.es/index.php/en/incibe-cert/publications/cybersecurity-highlights/leak-tea-app-exposes-photos-and-locations-thousands-users"
+        }
+      ],
+      "book_refs": [],
+      "commentary": {
+        "text": null,
+        "by": null
+      },
+      "data_type_scored": false
+    }
+  ]
+}

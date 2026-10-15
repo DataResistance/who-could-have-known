@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who Could Have Known?</title>
+  <meta name="description" content="A trivia game about location-data scandals: guess the year, then guess what changed.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23ffffff'/%3E%3Crect x='6' y='10' width='20' height='4' fill='%23161412'/%3E%3Crect x='6' y='18' width='13' height='4' fill='%23161412'/%3E%3C/svg%3E">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="./js/theme.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-row">
+      <a class="wordmark" href="./">Who Could Have <span>Known?</span></a>
+      <nav class="masthead-actions" aria-label="Site">
+        <a href="./teach.html">For teachers</a>
+        <button type="button" id="theme-toggle" class="icon-button" aria-label="Dark theme" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+        </button>
+      </nav>
+    </div>
+    <svg class="arcs" viewBox="0 0 820 54" preserveAspectRatio="none" aria-hidden="true">
+      <defs><linearGradient id="vir" x1="0" x2="1"><stop offset="0" stop-color="#440154"/><stop offset=".25" stop-color="#3b528b"/><stop offset=".5" stop-color="#21918c"/><stop offset=".75" stop-color="#5ec962"/><stop offset="1" stop-color="#fde725"/></linearGradient></defs>
+      <path d="M8 46 Q 410 -6 812 24" stroke="url(#vir)" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <path d="M8 52 Q 300 22 540 44" stroke="url(#vir)" stroke-width="7" fill="none" stroke-linecap="round" opacity=".45"/>
+    </svg>
+  </header>
+
+  <div id="review-banner" class="review-banner" hidden>
+    Review mode: draft fields, empty author slots and open verification items are shown.
+    <a href="./">Leave review mode</a>
+  </div>
+
+  <main id="app">
+    <p class="loading">Loading cases…</p>
+    <noscript><p>This game needs JavaScript. The cases are also readable as data in <a href="./data/cases.json">data/cases.json</a>.</p></noscript>
+  </main>
+  <div id="status" class="visually-hidden" role="status"></div>
+
+  <footer class="site-footer">
+    <p>A companion to <a href="https://doi.org/10.2307/j.ctv249sg9w"><cite>Data Power: Radical Geographies of Control and Resistance</cite></a> by Jim E. Thatcher and Craig M. Dalton (Pluto Press, 2022; open access).</p>
+    <p><strong>About the text.</strong> The book's authors are writing commentary for this site; none is published yet. Everything here now, including case titles, dates, summaries, links between cases, labels and classroom sets, was drafted with Anthropic's Claude from the linked sources and is awaiting the authors' review. Items marked <span class="badge">drafted by Claude</span> are the summaries and judgment calls that most need that review.</p>
+    <p><strong>Privacy.</strong> This page has no analytics, no cookies, no ads and loads nothing from third parties. Your guesses stay in your browser. Links go to Wayback Machine copies so they keep working.</p>
+  </footer>
+
+  <script src="./js/game.js"></script>
+</body>
+</html>

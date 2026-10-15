@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "note": "Classroom sets. Set selection is a judgment field (Claude proposes, authors approve). Descriptions and discussion prompts are author-only."
+  },
+  "sets": [
+    {
+      "id": "in-the-book",
+      "title": "Cases discussed in Data Power",
+      "cases": [
+        "please-rob-me-2010",
+        "msft-pedestrian-route-2012",
+        "girls-around-me-2012",
+        "metadata-kill-2014",
+        "chain-home-office-2017",
+        "strava-heatmap-2018",
+        "cambridge-analytica-2018"
+      ],
+      "selection": {
+        "by": "claude",
+        "status": "draft"
+      },
+      "description": {
+        "text": null,
+        "by": null
+      },
+      "discussion_prompts": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "fitness-apps",
+      "title": "Fitness tracking apps",
+      "cases": [
+        "strava-heatmap-2018",
+        "polar-flow-2018",
+        "stravaleaks-2024"
+      ],
+      "selection": {
+        "by": "claude",
+        "status": "draft"
+      },
+      "description": {
+        "text": null,
+        "by": null
+      },
+      "discussion_prompts": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "data-brokers",
+      "title": "Location data brokers",
+      "cases": [
+        "nyt-apps-know-2018",
+        "bounty-hunter-carriers-2019",
+        "wsj-venntel-2020",
+        "muslim-pro-xmode-2020",
+        "pillar-grindr-2021",
+        "kochava-2022",
+        "fog-reveal-2022",
+        "gravy-2025"
+      ],
+      "selection": {
+        "by": "claude",
+        "status": "draft"
+      },
+      "description": {
+        "text": null,
+        "by": null
+      },
+      "discussion_prompts": {
+        "text": null,
+        "by": null
+      }
+    },
+    {
+      "id": "who-bears-it",
+      "title": "Who was affected",
+      "cases": [
+        "strava-heatmap-2018",
+        "chain-home-office-2017",
+        "muslim-pro-xmode-2020",
+        "stravaleaks-2024",
+        "pillar-grindr-2021",
+        "flock-abortion-2025"
+      ],
+      "selection": {
+        "by": "claude",
+        "status": "draft"
+      },
+      "description": {
+        "text": null,
+        "by": null
+      },
+      "discussion_prompts": {
+        "text": null,
+        "by": null
+      }
+    }
+  ]
+}
