@@ -176,7 +176,7 @@
     var n = state.round.length;
     var pool = state.all.filter(usable).length;
     show(
-      '<section class="intro reveal-in">' +
+      '<section class="intro reveal-in">' + blot(YEAR_MIN + 3, "blot-a") + blot(YEAR_MAX - 2, "blot-b") +
         '<h1 class="visually-hidden" tabindex="-1" data-focus>Who Could Have Known?</h1>' +
         (state.notice ? '<p class="notice">' + esc(state.notice) + "</p>" : "") +
         '<p class="lede">Each card is a real headline about a scandal involving location or personal data, with the company names blacked out.</p>' +
@@ -200,7 +200,30 @@
     var score = state.results.reduce(function (s, r) { return s + r.points; }, 0);
     return '<h1 class="visually-hidden" tabindex="-1" data-focus>Card ' + (state.i + 1) + " of " + state.round.length + ": " + esc(label) + "</h1>" +
       '<div class="progress" aria-hidden="true"><span>Card <strong>' + (state.i + 1) + "</strong> of " + state.round.length + "</span><span>Score <strong>" + score + "</strong></span></div>" +
-      '<div class="pips" aria-hidden="true">' + pips + "</div>";
+      '<div class="pips" aria-hidden="true">' + pips + "</div>" + derive() +
+      '<div class="thesis-no" aria-hidden="true">' + (state.i + 1) + "</div>";
+  }
+
+  /* M3 · the round drawn as a dérive: a wandering route, walked so far in solid red */
+  function derive() {
+    var n = state.round.length, W = 1000, H = 46;
+    var pts = state.round.map(function (_, k) {
+      var x = 14 + k * (W - 28) / Math.max(1, n - 1);
+      var y = H / 2 + Math.sin(k * 2.3 + 1) * 12 + Math.cos(k * 1.7) * 5;
+      return [Math.round(x), Math.round(y)];
+    });
+    var line = function (ps) { return ps.map(function (p, k) { return (k ? "L" : "M") + p[0] + " " + p[1]; }).join(" "); };
+    return '<svg class="derive" viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+      '<path class="route" d="' + line(pts) + '"/>' +
+      (state.i > 0 ? '<path class="walked" d="' + line(pts.slice(0, state.i + 1)) + '"/>' : "") +
+      pts.map(function (p, k) { return '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="5" class="' + (k < state.i ? "done" : k === state.i ? "now" : "") + '" vector-effect="non-scaling-stroke"/>'; }).join("") +
+      "</svg>";
+  }
+
+  /* M5 · an ink blot after Jorn, in a time colour */
+  function blot(y, cls) {
+    var col = yearColor(y);
+    return '<svg class="blot ' + (cls || "") + '" viewBox="0 0 200 200" aria-hidden="true"><path filter="url(#ink)" fill="' + col + '" d="M100 18 C150 14 186 52 182 100 C178 150 146 186 98 182 C52 178 16 150 20 100 C24 54 52 22 100 18 Z"/></svg>';
   }
 
   function clipping(c, h, k, redacted) {
@@ -367,29 +390,39 @@
         x1 = a.right - box.left - 4; y1 = a.top + a.height / 2 - box.top;
         x2 = b.left - box.left - 12; y2 = b.top + b.height / 2 - box.top;
         var mx = (x1 + x2) / 2;
-        d = "M" + x1 + " " + y1 + " C " + mx + " " + y1 + ", " + mx + " " + y2 + ", " + x2 + " " + y2;
+        if (document.documentElement.classList.contains("debord")) {
+          // a Naked City swoop: overshoot upward and come down into the next piece
+          var lift = Math.max(40, Math.abs(x2 - x1) * 0.45);
+          d = "M" + x1 + " " + y1 + " C " + (x1 + 40) + " " + (y1 - lift) + ", " + (x2 - 60) + " " + (y2 - lift) + ", " + x2 + " " + y2;
+        } else {
+          d = "M" + x1 + " " + y1 + " C " + mx + " " + y1 + ", " + mx + " " + y2 + ", " + x2 + " " + y2;
+        }
       } else {
         // stacked: each arrow runs down its own lane in the left gutter, so arrows never pass behind other cards
-        var gx = 7 + (k % 3) * 8, r = 9;
+        var debx = document.documentElement.classList.contains("debord");
+        var gx = debx ? 12 + (k % 3) * 13 : 7 + (k % 3) * 8, r = debx ? 12 : 9;
         x1 = a.left - box.left + 2; y1 = a.top + a.height * 0.5 - box.top;
         var into = pairs.filter(function (q) { return q[1] === p[1]; }), slot = into.indexOf(p);
         x2 = b.left - box.left - 10; y2 = b.top + b.height * 0.5 - box.top + (slot - (into.length - 1) / 2) * 26;
         d = "M" + x1 + " " + y1 + " L" + (gx + r) + " " + y1 + " Q" + gx + " " + y1 + " " + gx + " " + (y1 + r) +
             " L" + gx + " " + (y2 - r) + " Q" + gx + " " + y2 + " " + (gx + r) + " " + y2 + " L" + x2 + " " + y2;
       }
-      var c1 = yearColor(+p[0].dataset.year), c2 = yearColor(+p[1].dataset.year);
+      var deb = document.documentElement.classList.contains("debord");
+      var c1 = deb ? "var(--mark)" : yearColor(+p[0].dataset.year), c2 = deb ? getComputedStyle(document.documentElement).getPropertyValue("--mark").trim() : yearColor(+p[1].dataset.year);
+      if (deb) c1 = c2;
       var g = document.createElementNS(NS, "linearGradient");
       g.setAttribute("id", "chain-g" + k); g.setAttribute("gradientUnits", "userSpaceOnUse");
       g.setAttribute("x1", x1); g.setAttribute("y1", y1); g.setAttribute("x2", x2); g.setAttribute("y2", y2);
       g.innerHTML = '<stop offset="0" stop-color="' + c1 + '"/><stop offset="1" stop-color="' + c2 + '"/>';
       var m = document.createElementNS(NS, "marker");
       m.setAttribute("id", "chain-m" + k); m.setAttribute("viewBox", "0 0 10 10"); m.setAttribute("refX", "4"); m.setAttribute("refY", "5");
-      m.setAttribute("markerWidth", "2.4"); m.setAttribute("markerHeight", "2.4"); m.setAttribute("orient", "auto");
+      m.setAttribute("markerWidth", deb ? "3.2" : "2.4"); m.setAttribute("markerHeight", deb ? "3.2" : "2.4"); m.setAttribute("orient", "auto");
       m.innerHTML = '<path d="M0 0L10 5L0 10z" fill="' + c2 + '"/>';
       defs.appendChild(g); defs.appendChild(m);
       var path = document.createElementNS(NS, "path");
       path.setAttribute("d", d); path.setAttribute("fill", "none"); path.setAttribute("stroke", "url(#chain-g" + k + ")");
-      path.setAttribute("stroke-width", "8"); path.setAttribute("stroke-linecap", "round"); path.setAttribute("stroke-linejoin", "round");
+      path.setAttribute("stroke-width", deb ? (b.left >= a.right - 4 ? "15" : "9") : "8"); path.setAttribute("stroke-linecap", deb ? "butt" : "round"); path.setAttribute("stroke-linejoin", "round");
+      if (deb) path.setAttribute("filter", "url(#cut)");
       path.setAttribute("marker-end", "url(#chain-m" + k + ")");
       svg.appendChild(path);
     });
@@ -454,7 +487,7 @@
     var changed = res.map(function (r) { return !r.scored ? "➖" : r.outcomeOk ? "✅" : "❌"; }).join("");
     var share = "Who Could Have Known? " + total + "/" + max + "\nYear  " + years + "\nWhat changed  " + changed + "\nAverage miss: " + avg.toFixed(1) + " years\n" + shareUrl();
     show(
-      '<section class="reveal-in">' +
+      '<section class="reveal-in results">' + blot(YEAR_MIN + 8, "blot-c") +
         '<h1 class="visually-hidden" tabindex="-1" data-focus>Your results</h1>' +
         '<p class="kicker">Your score</p><p class="final-score">' + total + " <span>/ " + max + "</span></p>" +
         "<p>On average your year guess was <strong>" + avg.toFixed(1) + " years</strong> off.</p>" +

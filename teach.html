@@ -9,9 +9,15 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/debord.css" rel="stylesheet">
   <script src="./js/theme.js"></script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <filter id="tape" x="-5%" y="-20%" width="110%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".9 .08" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5"/></filter>
+    <filter id="ink" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="8" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="38"/></filter>
+    <filter id="cut" filterUnits="userSpaceOnUse" x="-2000" y="-2000" width="6000" height="6000"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="6"/></filter>
+  </svg>
   <header class="masthead">
     <div class="masthead-row">
       <a class="wordmark" href="./">Who Could Have <span>Known?</span></a>
@@ -26,6 +32,14 @@
       <defs><linearGradient id="vir" x1="0" x2="1"><stop offset="0" stop-color="#440154"/><stop offset=".25" stop-color="#3b528b"/><stop offset=".5" stop-color="#21918c"/><stop offset=".75" stop-color="#5ec962"/><stop offset="1" stop-color="#fde725"/></linearGradient></defs>
       <path d="M8 46 Q 410 -6 812 24" stroke="url(#vir)" stroke-width="13" fill="none" stroke-linecap="round"/>
       <path d="M8 52 Q 300 22 540 44" stroke="url(#vir)" stroke-width="7" fill="none" stroke-linecap="round" opacity=".45"/>
+    </svg>
+    <svg class="naked-arrows" viewBox="0 0 820 92" aria-hidden="true">
+      <defs><marker id="hd" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="2.6" markerHeight="2.6" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+      <g filter="url(#cut)" fill="none" stroke="currentColor" stroke-linecap="butt">
+        <path d="M12 70 C 150 6, 330 8, 470 52" stroke-width="18" marker-end="url(#hd)"/>
+        <path d="M300 84 C 380 30, 520 10, 640 40" stroke-width="15" marker-end="url(#hd)"/>
+        <path d="M560 78 C 640 70, 700 48, 760 30" stroke-width="12" marker-end="url(#hd)"/>
+      </g>
     </svg>
   </header>
 

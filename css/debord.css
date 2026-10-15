@@ -1,0 +1,91 @@
+/* A Situationist layer, applied when <html> has class "debord".
+   Sources: Debord & Jorn's "The Naked City" (1957: cut-up map pieces, fat red arrows),
+   their "Mémoires" (1959: Jorn's ink blots over collage), the numbered theses of
+   "The Society of the Spectacle" (1967), and the dérive itself. Purely visual: no new words. */
+
+/* M1 · Map fragments: a street plan printed inside every fragment, and rougher cut edges */
+.debord {
+  --streets: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='none' stroke='%231b1b1f' stroke-opacity='.045' stroke-linecap='round'%3E%3Cpath d='M-10 40 L80 52 L170 38 L270 60' stroke-width='3.2'/%3E%3Cpath d='M30 -10 L44 90 L38 170 L52 270' stroke-width='1.2'/%3E%3Cpath d='M120 -10 L112 80 L126 160 L118 270' stroke-width='2.4'/%3E%3Cpath d='M200 -10 L214 120 L206 270' stroke-width='1.2'/%3E%3Cpath d='M-10 130 L90 118 L180 140 L270 126' stroke-width='1.2'/%3E%3Cpath d='M-10 210 L60 196 L140 220 L270 204' stroke-width='2.2'/%3E%3Cpath d='M44 90 L126 160 L206 270' stroke-width='1'/%3E%3Cpath d='M170 38 L214 120 L270 160' stroke-width='1'/%3E%3Cpath d='M80 52 L90 118 L60 196' stroke-width='.8'/%3E%3Cpath d='M126 160 L180 140 L214 120' stroke-width='.8'/%3E%3Ccircle cx='126' cy='160' r='14' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  --torn-a: polygon(0 7%, 4% 2%, 13% 4%, 21% 0, 33% 3%, 45% 1%, 58% 4%, 70% 0, 82% 3%, 93% 1%, 100% 6%, 98% 24%, 100% 41%, 97.5% 60%, 100% 79%, 97% 100%, 84% 97%, 71% 100%, 57% 96.5%, 42% 100%, 29% 97%, 15% 100%, 3% 96%, 0 82%, 2% 63%, 0 44%, 2.5% 25%);
+  --torn-b: polygon(2% 2%, 16% 5%, 27% 0, 41% 4%, 55% 0, 66% 5%, 79% 1%, 91% 4%, 100% 0, 97% 19%, 100% 36%, 98% 57%, 100% 74%, 98% 92%, 86% 100%, 74% 96%, 60% 100%, 47% 97%, 33% 100%, 21% 96%, 8% 100%, 0 93%, 3% 71%, 0 53%, 2% 33%, 0 15%);
+}
+:root.debord[data-theme="dark"] { --streets: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='none' stroke='%23ecebef' stroke-opacity='.04' stroke-linecap='round'%3E%3Cpath d='M-10 40 L80 52 L170 38 L270 60' stroke-width='3.2'/%3E%3Cpath d='M30 -10 L44 90 L38 170 L52 270' stroke-width='1.2'/%3E%3Cpath d='M120 -10 L112 80 L126 160 L118 270' stroke-width='2.4'/%3E%3Cpath d='M200 -10 L214 120 L206 270' stroke-width='1.2'/%3E%3Cpath d='M-10 130 L90 118 L180 140 L270 126' stroke-width='1.2'/%3E%3Cpath d='M-10 210 L60 196 L140 220 L270 204' stroke-width='2.2'/%3E%3Cpath d='M44 90 L126 160 L206 270' stroke-width='1'/%3E%3Cpath d='M170 38 L214 120 L270 160' stroke-width='1'/%3E%3Ccircle cx='126' cy='160' r='14' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E"); }
+.debord .frag { background-image: var(--streets); background-size: 260px 260px; clip-path: var(--torn-a); }
+.debord .frag-wrap:nth-of-type(even) .frag, .debord .clipping:nth-of-type(even) .frag { clip-path: var(--torn-b); background-position: 130px 70px; }
+.debord .clipping .frag { padding: 30px 30px 26px; }
+
+/* M2 · Naked City arrows: fat, red, overprinted (colour and filter set in game.js) */
+.debord .chainmap svg.arrows path[stroke] { mix-blend-mode: multiply; }
+:root.debord[data-theme="dark"] .chainmap svg.arrows path[stroke] { mix-blend-mode: screen; }
+
+/* M3 · Dérive: the progress bar becomes a wandering route through the round */
+.derive { display: none; }
+.debord .pips { display: none; }
+.debord .derive { display: block; width: 100%; height: 46px; margin: -2px 0 14px; overflow: visible; }
+.derive .route { fill: none; stroke: var(--mark); stroke-width: 3; stroke-dasharray: 2 7; stroke-linecap: round; }
+.derive .walked { fill: none; stroke: var(--mark); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.derive circle { fill: var(--paper); stroke: var(--ink-3); stroke-width: 1.5; }
+.derive circle.done { fill: var(--mark); stroke: var(--mark); }
+.derive circle.now { fill: var(--mark); stroke: var(--paper); stroke-width: 3; r: 8; }
+
+/* M4 · Theses: each card carries its number, like the numbered paragraphs of The Society of the Spectacle */
+.thesis-no { display: none; }
+.debord .thesis-no { display: block; font-family: var(--serif); font-weight: 300; font-size: 7rem; line-height: .8; color: var(--ink); opacity: .16; position: absolute; right: -24px; margin-top: -34px; pointer-events: none; z-index: 2; mix-blend-mode: multiply; font-size: 9rem; }
+.debord main { position: relative; }
+.debord .clipping { position: relative; z-index: 1; }
+
+/* M5 · Jorn's ink: blots overprinting the intro and the results (Mémoires) */
+.blot { display: none; }
+.debord .blot { display: block; position: absolute; pointer-events: none; z-index: 0; mix-blend-mode: multiply; opacity: .32; }
+:root.debord[data-theme="dark"] .blot { mix-blend-mode: screen; opacity: .28; }
+.debord .intro, .debord .results { position: relative; }
+.debord .intro > *:not(.blot), .debord .results > *:not(.blot) { position: relative; z-index: 1; }
+
+/* M6 · Redactions as torn black tape */
+.debord .redact { filter: url(#tape); padding: 0 .2em; margin: 0 -.05em; }
+
+/* M7 · Collage: chain fragments scatter and overlap like pasted pieces */
+.debord .chainmap .cols { gap: 18px 120px; }
+.debord .chainmap .col { gap: 8px; }
+.debord .chainmap .frag-wrap:nth-child(3n+1) .node { transform: rotate(-3deg) translateX(-6px); }
+.debord .chainmap .frag-wrap:nth-child(3n+2) .node { transform: rotate(2.4deg) translateX(10px); }
+.debord .chainmap .frag-wrap:nth-child(3n) .node { transform: rotate(-1deg) translateX(2px); }
+.debord .chainmap .node.now { transform: rotate(1.5deg) scale(1.06); }
+
+/* blot placement */
+.debord .blot-a { width: 300px; right: -70px; top: -40px; }
+.debord .blot-b { width: 170px; left: -60px; bottom: -30px; }
+.debord .blot-c { width: 260px; right: -40px; top: -30px; }
+@media (max-width: 520px) { .debord .blot-a { width: 200px; right: -60px; } .debord .blot-c { width: 180px; } }
+
+/* ---------- gray ground, red arrows (second pass) ---------- */
+/* A mid-gray ground: the white map fragments read as pieces cut and laid down on it. */
+:root.debord {
+  --paper: #cfcdc8;
+  --ink-2: #34343a;
+  --ink-3: #4c4c54;
+  --rule: #b3b1ab;
+  --mark: #d1241a;
+}
+:root.debord[data-theme="dark"] { --paper: #2a2a2e; --frag: #3a3a40; --rule: #4a4a52; --mark: #ff5446; }
+.debord .choice, .debord .share-text, .debord .copy-row input, .debord .icon-button { background: var(--frag); }
+.debord .btn.secondary { background: var(--frag); }
+
+/* The header: viridis arcs give way to overlapping Naked City arrows. */
+.naked-arrows { display: none; }
+.debord .arcs { display: none; }
+.debord .naked-arrows { display: block; max-width: 820px; width: 100%; height: 92px; margin: -6px auto -10px; padding: 0 16px; color: var(--mark); overflow: visible; }
+.debord .naked-arrows path[stroke-width] { mix-blend-mode: multiply; opacity: .9; }
+:root.debord[data-theme="dark"] .naked-arrows path[stroke-width] { mix-blend-mode: screen; }
+
+/* Chain arrows ride over the fragments, overprinting where they cross. */
+.debord .chainmap svg.arrows { z-index: 2; }
+.debord .chainmap svg.arrows path[stroke] { opacity: .9; }
+@media (max-width: 640px) {
+  .debord .chainmap .col { gap: 16px; }
+  .debord .chainmap .col-label { margin: 0 0 -4px 52px; position: relative; z-index: 3; }
+  .debord .chainmap .col .frag-wrap { margin-left: 52px; }
+  .debord .chainmap .frag-wrap .node { transform: rotate(-1deg); }
+  .debord .chainmap .frag-wrap:nth-child(even) .node { transform: rotate(1deg); }
+  .debord .chainmap .node.now { transform: rotate(.6deg); }
+}

@@ -6,4 +6,6 @@
     theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }
   document.documentElement.dataset.theme = theme;
+  var look = new URLSearchParams(location.search).get("look");
+  if (look !== "plain") document.documentElement.classList.add("debord");
 })();
