@@ -73,6 +73,8 @@ a:hover { color: var(--mark); }
 .wordmark span { color: var(--mark); }
 .wordmark:hover { color: inherit; }
 .masthead-actions { display: flex; align-items: center; gap: 16px; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; }
+.masthead-warn { max-width: 820px; margin: 0 auto; padding: 6px 16px 4px; }
+.badge.badge-warn { font-size: 1.15rem; line-height: 1.35; padding: 6px 12px; white-space: normal; letter-spacing: 0; vertical-align: 0; }
 .masthead-actions a { text-decoration: none; border-bottom: 1px solid var(--ink-3); }
 .icon-button { width: 36px; height: 36px; display: inline-grid; place-items: center; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 50%; cursor: pointer; }
 .icon-button svg { width: 17px; height: 17px; fill: currentColor; }
