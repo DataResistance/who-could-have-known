@@ -158,7 +158,7 @@
       state.badLink = state.notice = "None of the cards in that link exist any more. Here's a random round instead.";
       state.setTitle = null;
     }
-    return shuffle(playable).slice(0, ROUND_SIZE);
+    return shuffle(playable.filter(scored)).slice(0, ROUND_SIZE);
   }
   function shareUrl() {
     var base = location.origin + location.pathname;
@@ -174,9 +174,9 @@
 
   function intro() {
     var n = state.round.length;
-    var pool = state.all.filter(usable).length;
+    var pool = state.all.filter(function (c) { return usable(c) && scored(c); }).length;
     show(
-      '<section class="intro reveal-in">' + blot(YEAR_MIN + 3, "blot-a") + blot(YEAR_MAX - 2, "blot-b") +
+      '<section class="intro reveal-in">' +
         '<h1 class="visually-hidden" tabindex="-1" data-focus>Who Could Have Known?</h1>' +
         (state.notice ? '<p class="notice">' + esc(state.notice) + "</p>" : "") +
         '<p class="lede">Each card is a real headline about a scandal involving location or personal data, with the company names blacked out.</p>' +
@@ -237,12 +237,6 @@
       '<path class="track" d="' + pts(X1) + '"/>' +
       '<path class="fat" filter="url(#cut)" marker-end="url(#grow-h)" d="' + pts(xEnd) + '"/>' +
       "</svg>";
-  }
-
-  /* M5 · an ink blot after Jorn, in a time colour */
-  function blot(y, cls) {
-    var col = yearColor(y);
-    return '<svg class="blot ' + (cls || "") + '" viewBox="0 0 200 200" aria-hidden="true"><path filter="url(#ink)" fill="' + col + '" d="M100 18 C150 14 186 52 182 100 C178 150 146 186 98 182 C52 178 16 150 20 100 C24 54 52 22 100 18 Z"/></svg>';
   }
 
   function clipping(c, h, k, redacted) {
@@ -346,7 +340,7 @@
           }).join("") +
         '</div></fieldset><div class="btn-row"><button class="btn" type="submit">Guess</button></div></form>'
       :
-        '<section class="section"><p class="notice">What changed after this case is still being checked, so it isn\'t scored.</p>' +
+        '<section class="section"><p class="notice">What changed after this case is still being confirmed, so it isn\'t scored.</p>' +
         '<div class="btn-row"><button class="btn" id="see">See what changed</button></div></section>'));
     if (r.scored) {
       document.getElementById("o").addEventListener("submit", function (e) {
@@ -361,6 +355,14 @@
     } else {
       document.getElementById("see").addEventListener("click", function () { state.results.push(r); outcome(c, r); });
     }
+  }
+
+  /* The press's word, struck through above the chain; one is picked at random for each card. */
+  var PRESS_WORDS = ["Unprecedented", "Unforeseen", "Inconceivable", "Gobsmacked", "Blindsiding", "Unthinkable", "Out of the blue"];
+  var pressWordFor = {};
+  function pressWord(c) {
+    if (!pressWordFor[c.id]) pressWordFor[c.id] = PRESS_WORDS[Math.floor(Math.random() * PRESS_WORDS.length)];
+    return pressWordFor[c.id];
   }
 
   /* ---------- the chain: earlier and later cases, drawn as cut-out fragments joined by arrows (after Debord & Jorn's The Naked City) ---------- */
@@ -453,10 +455,13 @@
     var last = state.i === state.round.length - 1;
     var hasLinks = vals(c.precedents).length || vals(c.recurrences).length;
     var choices = r.scored ? OUTCOMES.map(function (o) {
-      var right = o[0] === c.outcome.value || (c.outcome.also_accept || []).indexOf(o[0]) >= 0;
-      var cls = right ? "correct" : o[0] === r.outcomeGuess ? "wrong" : "";
-      var tag = right ? "What happened" : o[0] === r.outcomeGuess ? "Your guess" : "";
-      return "<li class=\"choice " + cls + '">' + esc(o[1]) + (tag ? '<span class="tag">' + tag + "</span>" : "") + "</li>";
+      // Tags are independent: a tile can be both what happened and your guess.
+      var primary = o[0] === c.outcome.value;
+      var alt = !primary && (c.outcome.also_accept || []).indexOf(o[0]) >= 0;
+      var mine = o[0] === r.outcomeGuess;
+      var cls = primary || alt ? "correct" : mine ? "wrong" : "";
+      var tags = (primary ? ['<span class="tag">What happened</span>'] : []).concat(alt ? ['<span class="tag">Also counts</span>'] : [], mine ? ['<span class="tag mine">Your guess</span>'] : []);
+      return "<li class=\"choice " + cls + '">' + esc(o[1]) + (tags.length ? '<span class="tags">' + tags.join("") + "</span>" : "") + "</li>";
     }).join("") : "";
     var sources = (c.sources || []).map(function (s) {
       return "<li>" + esc(s.label) + (s.url ? " (" + link(s) + ")" : "") + "</li>";
@@ -474,7 +479,7 @@
         (r.scored ? c.headlines.filter(function (h) { return h.phase === "aftermath"; }).map(function (h, k) { return clipping(c, h, 100 + k, false).replace("Another headline", "Later headline"); }).join("") : "") +
       "</section>" +
       (hasLinks ?
-        '<section class="section"><h2 class="detourne"><s>Unprecedented</s> <em>Who could have known?</em></h2>' +
+        '<section class="section"><h2 class="detourne"><s>' + esc(pressWord(c)) + '</s> <em>Who could have known?</em></h2>' +
           chainMap(c) +
           (isDraft(c.precedents) || isDraft(c.recurrences) ? '<p class="links-out">Links between cases' + badge(isDraft(c.precedents) ? c.precedents : c.recurrences) + "</p>" : "") +
         "</section>" : "") +
@@ -506,7 +511,7 @@
     var changed = res.map(function (r) { return !r.scored ? "➖" : r.outcomeOk ? "✅" : "❌"; }).join("");
     var share = "Who Could Have Known? " + total + "/" + max + "\nYear  " + years + "\nWhat changed  " + changed + "\nAverage miss: " + avg.toFixed(1) + " years\n" + shareUrl();
     show(
-      '<section class="reveal-in results">' + blot(YEAR_MIN + 8, "blot-c") +
+      '<section class="reveal-in results">' +
         '<h1 class="visually-hidden" tabindex="-1" data-focus>Your results</h1>' +
         '<p class="kicker">Your score</p><p class="final-score">' + total + " <span>/ " + max + "</span></p>" +
         "<p>On average your year guess was <strong>" + avg.toFixed(1) + " years</strong> off.</p>" +

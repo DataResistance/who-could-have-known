@@ -69,7 +69,7 @@
         "status": "draft"
       },
       "outcome": {
-        "value": "nothing",
+        "value": "pr-tweak",
         "by": "claude",
         "status": "draft"
       },
@@ -871,7 +871,7 @@
         "status": "draft"
       },
       "outcome": {
-        "value": "pr-tweak",
+        "value": "nothing",
         "by": "claude",
         "status": "draft",
         "scored": false
@@ -1801,12 +1801,12 @@
         "status": "draft"
       },
       "outcome": {
-        "value": "nothing",
+        "value": "fine-settlement-order",
         "by": "claude",
         "status": "draft"
       },
       "outcome_detail": {
-        "text": "The House Oversight Committee opened an investigation, and CBP renewed its Venntel contract. Later FOIA records showed DHS temporarily paused some Venntel-based projects over legal questions. Venntel's parent, Gravy Analytics, came under an FTC order in January 2025.",
+        "text": "The House Oversight Committee opened an investigation, and CBP renewed its Venntel contract. Later FOIA records showed DHS temporarily paused some Venntel-based projects over legal questions. In January 2025 the FTC finalized an order barring Venntel and its parent Gravy Analytics from selling sensitive location data except in limited circumstances.",
         "by": "claude",
         "status": "draft"
       },
@@ -1925,11 +1925,11 @@
         "status": "draft"
       },
       "outcome": {
-        "value": "product-pulled",
+        "value": "fine-settlement-order",
         "by": "claude",
         "status": "draft",
         "also_accept": [
-          "fine-settlement-order"
+          "product-pulled"
         ]
       },
       "outcome_detail": {
@@ -2762,7 +2762,7 @@
         "status": "draft"
       },
       "outcome": {
-        "value": "pr-tweak",
+        "value": "nothing",
         "by": "claude",
         "status": "draft",
         "scored": false

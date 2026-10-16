@@ -145,7 +145,8 @@ input[type=range] { width: 100%; accent-color: var(--v3); }
 .choice:has(input:checked) { border-color: var(--v3); box-shadow: inset 5px 0 0 var(--v3); }
 .choice.correct { border-color: var(--good); box-shadow: inset 5px 0 0 var(--good); }
 .choice.wrong { border-color: var(--mark); box-shadow: inset 5px 0 0 var(--mark); }
-.choice .tag { margin-left: auto; font-family: var(--mono); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.choice .tags { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.choice .tag { white-space: nowrap; font-family: var(--mono); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
 .choice.correct .tag { color: var(--good); }
 .choice.wrong .tag { color: var(--mark); }
 
@@ -246,3 +247,5 @@ ul.outcome-list { list-style: none; padding: 0; margin: 0; }
   .frag { clip-path: none; border: 1px solid CanvasText; }
   .badge { border: 1px solid CanvasText; }
 }
+
+.choice .tag.mine { color: var(--ink-2); }

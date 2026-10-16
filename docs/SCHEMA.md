@@ -54,7 +54,9 @@ The goal is for all critical and explanatory text to be written by Jim or Craig,
 - `headlines[].phase`: `"break"` (shown while guessing) or `"aftermath"` (shown only in the reveal, because it would give away the year or the outcome).
 - `headlines[].checked_via`: which element of the archived page the wording was checked against.
 - `outcome.scored`: `false` keeps a card's outcome out of scoring until an author confirms it.
-- `outcome.also_accept`: other outcome values that also count as correct.
+- `outcome.also_accept`: other outcome values that also count as correct (shown as "Also counts").
+- Outcome rule (draft, for the authors to confirm): the most consequential change that followed for the company or practice involved, including later regulatory action against the same practice; a public statement alone counts as "a statement and a settings tweak".
+- Cards with `outcome.scored: false` are left out of random rounds and appear only in classroom sets and custom links.
 - `data_type_scored`: `false` hides and does not score the data-type question for a card.
 - `contested`: `true` shows a "Disputed" notice and the named parties' responses next to the summary.
 - Review notes (`verify`, `headline_leads`) live in `data/review.json`, which is kept out of the public repo; `?review` shows them when the file is present.
