@@ -217,6 +217,25 @@
       '<path class="route" d="' + line(pts) + '"/>' +
       (state.i > 0 ? '<path class="walked" d="' + line(pts.slice(0, state.i + 1)) + '"/>' : "") +
       pts.map(function (p, k) { return '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="5" class="' + (k < state.i ? "done" : k === state.i ? "now" : "") + '" vector-effect="non-scaling-stroke"/>'; }).join("") +
+      "</svg>" + grow();
+  }
+  /* Progress (picked option 5C): one fat Naked City arrow growing along an S-shaped route.
+     The route bends one way for the first half of the round, turns at the halfway point, and bends back. */
+  function grow() {
+    var n = state.round.length, W = 1000, X0 = 12, X1 = W - 30, MID = 24, AMP = 12;
+    var f = n > 1 ? state.i / (n - 1) : 1;
+    var yAt = function (x) { return MID - AMP * Math.sin(2 * Math.PI * (x - X0) / (X1 - X0)); };
+    var pts = function (xEnd) {
+      var out = [], step = 8;
+      for (var x = X0; x < xEnd; x += step) out.push([x, yAt(x)]);
+      out.push([xEnd, yAt(xEnd)]);
+      return out.map(function (p, k) { return (k ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); }).join(" ");
+    };
+    var xEnd = Math.max(X0 + 50, X0 + f * (X1 - X0));
+    return '<svg class="grow" viewBox="0 0 ' + W + ' 48" preserveAspectRatio="none" aria-hidden="true">' +
+      '<defs><marker id="grow-h" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="2.4" markerHeight="2.4" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--mark)"/></marker></defs>' +
+      '<path class="track" d="' + pts(X1) + '"/>' +
+      '<path class="fat" filter="url(#cut)" marker-end="url(#grow-h)" d="' + pts(xEnd) + '"/>' +
       "</svg>";
   }
 
@@ -271,7 +290,7 @@
               return '<label class="choice"><input type="radio" name="dt" value="' + esc(t) + '"' + (dt === t ? " checked" : "") + (k === 0 ? " required" : "") + "> " + esc(typeLabel(t)) + "</label>";
             }).join("") +
           "</div></fieldset>") +
-          '<div class="btn-row"><button class="btn" type="submit">Lock in</button></div>' +
+          '<div class="btn-row"><button class="btn" type="submit">Guess</button></div>' +
         "</form>");
       if (focusClip) { var el = document.getElementById("clip-" + (shown - 1)); if (el) { el.focus({ preventScroll: true }); el.scrollIntoView({ block: "center" }); } }
       var slider = document.getElementById("yr");
@@ -325,7 +344,7 @@
           OUTCOMES.map(function (o, k) {
             return '<label class="choice"><input type="radio" name="oc" value="' + o[0] + '"' + (k === 0 ? " required" : "") + "> " + esc(o[1]) + "</label>";
           }).join("") +
-        '</div></fieldset><div class="btn-row"><button class="btn" type="submit">Lock in</button></div></form>'
+        '</div></fieldset><div class="btn-row"><button class="btn" type="submit">Guess</button></div></form>'
       :
         '<section class="section"><p class="notice">What changed after this case is still being checked, so it isn\'t scored.</p>' +
         '<div class="btn-row"><button class="btn" id="see">See what changed</button></div></section>'));
@@ -549,6 +568,7 @@
     symmetrizeLinks();
     state.round = buildRound();
     if (!state.round.length) { show('<p tabindex="-1" data-focus>There are no playable cards yet.</p>'); return; }
+    if (params.has("autostart")) { state.i = 0; state.results = []; guess(); return; }
     intro();
   }).catch(function () {
     show('<p tabindex="-1" data-focus>Couldn\'t load the cases. If you opened this file directly, serve the folder over HTTP instead (for example <code>python3 -m http.server</code>).</p>');

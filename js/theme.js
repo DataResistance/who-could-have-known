@@ -8,4 +8,7 @@
   document.documentElement.dataset.theme = theme;
   var look = new URLSearchParams(location.search).get("look");
   if (look !== "plain") document.documentElement.classList.add("debord");
+  (new URLSearchParams(location.search).get("v") || "").split(",").forEach(function (v) {
+    if (/^[a-z0-9-]+$/.test(v)) document.documentElement.classList.add("v-" + v);
+  });
 })();

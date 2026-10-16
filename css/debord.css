@@ -6,17 +6,17 @@
 /* M1 · Map fragments: a street plan printed inside every fragment, and rougher cut edges */
 .debord {
   --streets: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='none' stroke='%231b1b1f' stroke-opacity='.045' stroke-linecap='round'%3E%3Cpath d='M-10 40 L80 52 L170 38 L270 60' stroke-width='3.2'/%3E%3Cpath d='M30 -10 L44 90 L38 170 L52 270' stroke-width='1.2'/%3E%3Cpath d='M120 -10 L112 80 L126 160 L118 270' stroke-width='2.4'/%3E%3Cpath d='M200 -10 L214 120 L206 270' stroke-width='1.2'/%3E%3Cpath d='M-10 130 L90 118 L180 140 L270 126' stroke-width='1.2'/%3E%3Cpath d='M-10 210 L60 196 L140 220 L270 204' stroke-width='2.2'/%3E%3Cpath d='M44 90 L126 160 L206 270' stroke-width='1'/%3E%3Cpath d='M170 38 L214 120 L270 160' stroke-width='1'/%3E%3Cpath d='M80 52 L90 118 L60 196' stroke-width='.8'/%3E%3Cpath d='M126 160 L180 140 L214 120' stroke-width='.8'/%3E%3Ccircle cx='126' cy='160' r='14' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
-  --torn-a: polygon(0 7%, 4% 2%, 13% 4%, 21% 0, 33% 3%, 45% 1%, 58% 4%, 70% 0, 82% 3%, 93% 1%, 100% 6%, 98% 24%, 100% 41%, 97.5% 60%, 100% 79%, 97% 100%, 84% 97%, 71% 100%, 57% 96.5%, 42% 100%, 29% 97%, 15% 100%, 3% 96%, 0 82%, 2% 63%, 0 44%, 2.5% 25%);
-  --torn-b: polygon(2% 2%, 16% 5%, 27% 0, 41% 4%, 55% 0, 66% 5%, 79% 1%, 91% 4%, 100% 0, 97% 19%, 100% 36%, 98% 57%, 100% 74%, 98% 92%, 86% 100%, 74% 96%, 60% 100%, 47% 97%, 33% 100%, 21% 96%, 8% 100%, 0 93%, 3% 71%, 0 53%, 2% 33%, 0 15%);
+  --torn-a: polygon(0 7%, 2% 2%, 13% 4%, 21% 0, 33% 3%, 45% 1%, 58% 4%, 70% 0, 82% 3%, 93% 1%, 100% 6%, 99% 24%, 100% 41%, 98.75% 60%, 100% 79%, 98.5% 100%, 84% 97%, 71% 100%, 57% 96.5%, 42% 100%, 29% 97%, 15% 100%, 1.5% 96%, 0 82%, 1% 63%, 0 44%, 1.25% 25%);
+  --torn-b: polygon(1% 2%, 16% 5%, 27% 0, 41% 4%, 55% 0, 66% 5%, 79% 1%, 91% 4%, 100% 0, 98.5% 19%, 100% 36%, 99% 57%, 100% 74%, 99% 92%, 86% 100%, 74% 96%, 60% 100%, 47% 97%, 33% 100%, 21% 96%, 8% 100%, 0 93%, 1.5% 71%, 0 53%, 1% 33%, 0 15%);
 }
-:root.debord[data-theme="dark"] { --streets: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='none' stroke='%23ecebef' stroke-opacity='.04' stroke-linecap='round'%3E%3Cpath d='M-10 40 L80 52 L170 38 L270 60' stroke-width='3.2'/%3E%3Cpath d='M30 -10 L44 90 L38 170 L52 270' stroke-width='1.2'/%3E%3Cpath d='M120 -10 L112 80 L126 160 L118 270' stroke-width='2.4'/%3E%3Cpath d='M200 -10 L214 120 L206 270' stroke-width='1.2'/%3E%3Cpath d='M-10 130 L90 118 L180 140 L270 126' stroke-width='1.2'/%3E%3Cpath d='M-10 210 L60 196 L140 220 L270 204' stroke-width='2.2'/%3E%3Cpath d='M44 90 L126 160 L206 270' stroke-width='1'/%3E%3Cpath d='M170 38 L214 120 L270 160' stroke-width='1'/%3E%3Ccircle cx='126' cy='160' r='14' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E"); }
+:root.debord[data-theme="dark"].no-light-streets { --streets: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='none' stroke='%23ecebef' stroke-opacity='.04' stroke-linecap='round'%3E%3Cpath d='M-10 40 L80 52 L170 38 L270 60' stroke-width='3.2'/%3E%3Cpath d='M30 -10 L44 90 L38 170 L52 270' stroke-width='1.2'/%3E%3Cpath d='M120 -10 L112 80 L126 160 L118 270' stroke-width='2.4'/%3E%3Cpath d='M200 -10 L214 120 L206 270' stroke-width='1.2'/%3E%3Cpath d='M-10 130 L90 118 L180 140 L270 126' stroke-width='1.2'/%3E%3Cpath d='M-10 210 L60 196 L140 220 L270 204' stroke-width='2.2'/%3E%3Cpath d='M44 90 L126 160 L206 270' stroke-width='1'/%3E%3Cpath d='M170 38 L214 120 L270 160' stroke-width='1'/%3E%3Ccircle cx='126' cy='160' r='14' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E"); }
 .debord .frag { background-image: var(--streets); background-size: 260px 260px; clip-path: var(--torn-a); }
 .debord .frag-wrap:nth-of-type(even) .frag, .debord .clipping:nth-of-type(even) .frag { clip-path: var(--torn-b); background-position: 130px 70px; }
 .debord .clipping .frag { padding: 30px 30px 26px; }
 
 /* M2 · Naked City arrows: fat, red, overprinted (colour and filter set in game.js) */
 .debord .chainmap svg.arrows path[stroke] { mix-blend-mode: multiply; }
-:root.debord[data-theme="dark"] .chainmap svg.arrows path[stroke] { mix-blend-mode: screen; }
+:root.debord[data-theme="dark"] .chainmap svg.arrows path[stroke] { mix-blend-mode: normal; }
 
 /* M3 · Dérive: the progress bar becomes a wandering route through the round */
 .derive { display: none; }
@@ -67,7 +67,16 @@
   --rule: #b3b1ab;
   --mark: #d1241a;
 }
-:root.debord[data-theme="dark"] { --paper: #2a2a2e; --frag: #3a3a40; --rule: #4a4a52; --mark: #ff5446; }
+/* Dark mode: charcoal ground; the white fragments and answer slips keep dark ink (picked option 1C). */
+:root.debord[data-theme="dark"] { --paper: #34343a; --frag: #ffffff; --ink: #f1f0ec; --ink-2: #d9d8d3; --ink-3: #b9b8b2; --rule: #56565e; --bar: #111114; --mark: #ff4b3e; --grid: rgba(27, 27, 31, .045); }
+:root.debord[data-theme="dark"] .frag,
+:root.debord[data-theme="dark"] .choice,
+:root.debord[data-theme="dark"] .btn.secondary,
+:root.debord[data-theme="dark"] .share-text,
+:root.debord[data-theme="dark"] .copy-row input,
+:root.debord[data-theme="dark"] .icon-button { --ink: #1b1b1f; --ink-2: #34343a; --ink-3: #55555c; color: #1b1b1f; }
+:root.debord[data-theme="dark"] .btn { background: #f1f0ec; color: #1b1b1f; border-color: #f1f0ec; }
+:root.debord[data-theme="dark"] .btn:hover { background: var(--mark); border-color: var(--mark); color: #1b1b1f; }
 .debord .choice, .debord .share-text, .debord .copy-row input, .debord .icon-button { background: var(--frag); }
 .debord .btn.secondary { background: var(--frag); }
 
@@ -89,3 +98,61 @@
   .debord .chainmap .frag-wrap:nth-child(even) .node { transform: rotate(1deg); }
   .debord .chainmap .node.now { transform: rotate(.6deg); }
 }
+
+/* ---------- masthead (picked option 2B: Bulletin) ---------- */
+/* Tall two-line serif title, after the Internationale Situationniste bulletin mockup; one big red arrow swept beneath. */
+:root.debord .wordmark { font-family: var(--serif); font-weight: 600; text-transform: none; letter-spacing: -.01em; font-size: 3rem; line-height: .92; }
+:root.debord .wordmark span { display: block; color: var(--mark); }
+:root.debord .masthead-row { position: relative; z-index: 1; align-items: flex-start; }
+:root.debord .naked-arrows { height: 96px; margin-top: -26px; position: relative; z-index: 0; pointer-events: none; }
+:root.debord .naked-arrows path[stroke-width]:not(:first-child) { display: none; }
+@media (max-width: 520px) {
+  :root.debord .wordmark { font-size: 1.75rem; }
+  :root.debord .naked-arrows { height: 70px; margin-top: -18px; }
+}
+
+/* ---------- redactions (picked option 4C: red tape, darkened toward the gray ground) ---------- */
+:root.debord { --tape: #a8352e; }
+:root.debord .redact { background: var(--tape); }
+
+/* ---------- progress (picked option 5C: a growing Naked City arrow on an S-shaped route) ---------- */
+:root.debord .derive { display: none; }
+.grow { display: none; }
+:root.debord .grow { display: block; width: 100%; height: 48px; margin: -4px 0 10px; overflow: visible; }
+.grow .track { stroke: var(--ink-3); stroke-opacity: .55; stroke-width: 3; stroke-dasharray: 2 8; fill: none; stroke-linecap: round; }
+.grow .fat { stroke: var(--mark); stroke-width: 13; fill: none; stroke-linejoin: round; }
+
+/* ---------- year slider (picked option 6B ruler, with the light serif numeral) ---------- */
+/* A ruler with a tick per year and a red marker. */
+:root.debord input[type=range] {
+  -webkit-appearance: none; appearance: none; height: 30px; background: transparent; cursor: pointer;
+}
+:root.debord input[type=range]::-webkit-slider-runnable-track {
+  height: 18px; background:
+    linear-gradient(var(--ink), var(--ink)) 0 100% / 100% 2px no-repeat,
+    repeating-linear-gradient(90deg, var(--ink) 0 1.5px, transparent 1.5px calc((100% - 1.5px) / 18)) 0 100% / 100% 10px no-repeat;
+}
+:root.debord input[type=range]::-moz-range-track {
+  height: 18px; background:
+    linear-gradient(var(--ink), var(--ink)) 0 100% / 100% 2px no-repeat,
+    repeating-linear-gradient(90deg, var(--ink) 0 1.5px, transparent 1.5px calc((100% - 1.5px) / 18)) 0 100% / 100% 10px no-repeat;
+}
+:root.debord input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 14px; height: 30px; margin-top: -6px; background: var(--mark); border: 0; clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+:root.debord input[type=range]::-moz-range-thumb {
+  width: 14px; height: 30px; background: var(--mark); border: 0; border-radius: 0;
+}
+:root.debord input[type=range]:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+
+/* ---------- answer choices (picked option 7A: clean boxes, red selection) ---------- */
+:root.debord .choice:has(input:checked) { border-color: var(--mark); box-shadow: inset 5px 0 0 var(--mark); }
+:root.debord .choice input { accent-color: var(--mark); }
+
+/* ---------- chain map (picked option 8B: all-red Naked City) ---------- */
+:root.debord .chainmap .node { border-top: 0; padding-top: 16px; }
+:root.debord .chainmap .node b { font-family: var(--mono); font-weight: 700; font-size: 1.25rem; color: var(--mark); }
+:root.debord .chainmap .frag-wrap:nth-child(3n+1) .node { transform: rotate(-4deg) translate(-10px, 6px); }
+:root.debord .chainmap .frag-wrap:nth-child(3n+2) .node { transform: rotate(3.2deg) translate(14px, -6px); }
+:root.debord .chainmap .node.now { transform: rotate(1.8deg) scale(1.08); box-shadow: 0 0 0 3px var(--ink) inset; }
+:root.debord .chainmap .col-label { position: relative; z-index: 3; margin-bottom: 4px; }
